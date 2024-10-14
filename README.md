@@ -1,23 +1,21 @@
-# eleventy-simple
+# Static.Quest
 
-A blog starter using [11ty](https://github.com/11ty/eleventy) and [Simple.css](https://github.com/kevquirk/simple.css). Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
+A simple web ring for static sites.
 
-## Demo
-
-[eleventy-simple.pages.dev](https://eleventy-simple.pages.dev)
+[Static.Quest](https://static.quest)
 
 ## Getting Started
 
 ### 1. Clone this Repository
 
 ```
-git clone https://github.com/lkhrs/eleventy-simple.git my-blog-name
+git clone https://github.com/cjerrington/StaticQuest.git StaticQuest
 ```
 
 ### 2. Navigate to the directory
 
 ```
-cd my-blog-name
+cd StaticQuest
 ```
 
 Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
@@ -72,4 +70,3 @@ DEBUG=* npx @11ty/eleventy
   - `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
   - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
 - `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
-
