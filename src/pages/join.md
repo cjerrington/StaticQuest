@@ -10,9 +10,9 @@ The only requirement is to have a static site! This is the honor system and we'r
 
 ## Adding your site
 
-Just clone/fork the repository, update the `src/_data/members.json` file with your information and make a pull request, and we'll get it added.
+Just clone/fork the [repository](https://github.com/cjerrington/StaticQuest), update the `src/_data/members.json` file with your information and make a pull request, and we'll get it added.
 
-Add your information in the JSON data and it will be rendered to the table on the [Members](/members0 page).
+Add your information in the JSON data and it will be rendered to the table on the [Members](/members) page.
 
 ```json
   {
