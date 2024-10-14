@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joining Static.Quest</title>
+  <meta name="description" content="The adventure awaits">
+  <meta name="generator" content="Eleventy v3.0.0">
+
+  <link rel="stylesheet" href="/css/simple.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+  <link rel="stylesheet" href="/css/prism-diff.css">
+
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Static.Quest">
+  <link rel="alternate" href="/feed/feed.json" type="application/json" title="Static.Quest">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/members/">Members</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/archive/">Posts</a></li>
+        <li><a href="/join/">Join</a></li>
+      </ul>
+    </nav>
+
+    <h1>Joining Static.Quest</h1>
+    <p>The adventure awaits</p>
+  </header>
+
+  <main>
+    
+<p>The only requirement is to have a static site! This is the honor system and we're not going to ask for the source or hosting or your site. We do have this in the data file that lists our members, just to show the various methods that are available to you to build your sites.</p>
+<h2 id="adding-your-site" tabindex="-1">Adding your site <a class="direct-link" href="#adding-your-site" aria-hidden="true">#</a></h2>
+<p>Just clone/fork the repository, update the <code>src/_data/members.json</code> file with your information and make a pull request, and we'll get it added.</p>
+<p>Add your information in the JSON data and it will be rendered to the table on the [Members](/members0 page).</p>
+<pre class="language-json"><code class="language-json">  <span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Your Name"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"yourwebsite.com/"</span><span class="token punctuation">,</span>
+    <span class="token property">"feed"</span><span class="token operator">:</span> <span class="token string">"yourwebsite.com/feed/"</span><span class="token punctuation">,</span>
+    <span class="token property">"ssg"</span><span class="token operator">:</span> <span class="token string">"static site generator"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"blog, personal, art, technology, etc"</span>
+  <span class="token punctuation">}</span></code></pre>
+<p>You can add what you'd like in the <code>JSON</code>, but the name and website are kinda required. Adding an RSS feed is for those who like to subscribe and its readily available.</p>
+<p>The <code>ssg</code> is for the Static Site Generator used, and would be neat as the web ring grows to see the variety of methods used to generate your awesome website.</p>
+<h2 id="add-static-quest-to-your-site" tabindex="-1">Add Static.Quest to your site <a class="direct-link" href="#add-static-quest-to-your-site" aria-hidden="true">#</a></h2>
+<p>As a member of a web ring it is common to add links to the web ring and its members.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+    A member of the <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Static.Quest<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> web ring! 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>View Members<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Feeling lucky?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+
+  </main>
+
+  <footer>
+    <p><a href="/members">View Members</a> | <a href="/join">Join the Quest</a> | <a href="/acknowledgements">Acknowledgements</a></p>
+    <p>Build with <a href="https://www.11ty.dev/">Eleventy</a> by <a href="https://claytonerrington">Clayton Errington</a></p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Static.Quest</title>
+	<subtitle>An dynamic webring</subtitle>
+	
+	<link href="https://static.quest/feed/feed.xml" rel="self"/>
+	<link href="https://static.quest/"/>
+	<updated>2024-10-11T00:00:00Z</updated>
+	<id>https://static.quest/</id>
+	<author>
+		<name>Clayton Errington</name>
+		<email>me@claytonerrington.com</email>
+	</author>
+	
+	<entry>
+		<title>What is a static website?</title>
+		<link href="https://static.quest/posts/what-is-a-satic-site/"/>
+		<updated>2024-10-11T00:00:00Z</updated>
+		<id>https://static.quest/posts/what-is-a-satic-site/</id>
+		<content type="html">&lt;h2 id=&quot;what-is-a-static-website&quot; tabindex=&quot;-1&quot;&gt;What is a Static Website? &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-satic-site/#what-is-a-static-website&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A static website is like a digital brochure that remains unchanged unless manually updated. Every page of a static website is a fixed HTML file, meaning the content is pre-determined and doesn&#39;t dynamically change based on user interactions or real-time data.&lt;/p&gt;
+&lt;h3 id=&quot;key-characteristics-of-static-websites&quot; tabindex=&quot;-1&quot;&gt;Key Characteristics of Static Websites &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-satic-site/#key-characteristics-of-static-websites&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pre-built Content: All content is created and stored as individual HTML files.&lt;/li&gt;
+&lt;li&gt;No Server-Side Processing: Unlike dynamic websites, static sites don&#39;t require a server to process requests and generate content on the fly.&lt;/li&gt;
+&lt;li&gt;Faster Load Times: Because there&#39;s no server processing, static websites generally load much faster than dynamic ones.&lt;/li&gt;
+&lt;li&gt;Limited Interactivity: While they can include basic elements like forms and images, static websites lack advanced features like user logins, personalized content, or real-time updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;when-to-choose-a-static-website&quot; tabindex=&quot;-1&quot;&gt;When to Choose a Static Website &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-satic-site/#when-to-choose-a-static-website&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple Content: If your website primarily consists of text, images, and basic information, a static site is a good option.&lt;/li&gt;
+&lt;li&gt;Performance Focus: Static websites are ideal for projects where fast load times are crucial, such as portfolios or online stores with a limited product range.&lt;/li&gt;
+&lt;li&gt;Low Maintenance: If you don&#39;t need frequent updates or advanced features, a static website can be easier to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;popular-tools-for-creating-static-websites&quot; tabindex=&quot;-1&quot;&gt;Popular Tools for Creating Static Websites &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-satic-site/#popular-tools-for-creating-static-websites&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML, CSS, and JavaScript: For those comfortable with web development, creating a static site from scratch using these languages provides maximum control.&lt;/li&gt;
+&lt;li&gt;Static Site Generators: Tools like Jekyll, Hugo, and Gatsby streamline the process by converting plain text and templates into HTML files.&lt;/li&gt;
+&lt;li&gt;Content Management Systems (CMS): While primarily designed for dynamic websites, some CMS platforms like WordPress can also be used to create static sites, offering a more user-friendly approach.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;in-conclusion&quot; tabindex=&quot;-1&quot;&gt;In Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-satic-site/#in-conclusion&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Static websites offer a straightforward and efficient solution for many online projects. Their simplicity, speed, and low maintenance requirements make them a popular choice for individuals and businesses with basic website needs. However, if you require more complex features and dynamic content, a dynamic website might be a better fit.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Building a static site</title>
+		<link href="https://static.quest/posts/static-site-generators/"/>
+		<updated>2024-10-11T00:00:00Z</updated>
+		<id>https://static.quest/posts/static-site-generators/</id>
+		<content type="html">&lt;p&gt;Static sites are a great part of the small web. They are easy to configure, deploy, and maintain. You can use a static site generator or write the HTML yourself.&lt;/p&gt;
+&lt;h2 id=&quot;static-site-generators&quot; tabindex=&quot;-1&quot;&gt;Static Site Generators &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#static-site-generators&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To help some content producers, the use of a Static Site Generator is helpful. This allows the user to design their site and functionality, then just add content where it is needed and the generator builds complete HTML from template files. Examples of Static Site Generators in no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nextjs.org/&quot;&gt;Next.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docusaurus.io/&quot;&gt;Docusaurus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nuxt.com/&quot;&gt;Nuxt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuepress.vuejs.org/&quot;&gt;VuePress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://getpelican.com/&quot;&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are plenty more: &lt;a href=&quot;https://jamstack.org/generators/&quot;&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Most of these generators rely on technologies like NodeJS, Python, Ruby, Go and others. The generators are able to build simple personal sites to large complex business pages, the choices are endless.&lt;/p&gt;
+&lt;h2 id=&quot;hosting-your-static-site&quot; tabindex=&quot;-1&quot;&gt;Hosting your Static Site &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#hosting-your-static-site&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hosting a website is the next step after building it. There are many free platforms available to host a static site, and also paid hosting options. Popular static site hosting is found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vercel.com/&quot;&gt;Vercel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://codeberg.page/&quot;&gt;Codeberg Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pages.cloudflare.com/&quot;&gt;Cloudflare Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many of these providers integrate with the Git actions to build and deploy the site to their hosting platform. The addition of Git provides some with a workflow that makes it easy to add their content and publish with out needing to be hands on or knowledgeable in the hosting aspect of web content.&lt;/p&gt;
+&lt;p&gt;This is not a comprehensive list, but a small one to help those who wan to get into web design, blogging, and sharing their content.&lt;/p&gt;
+&lt;h2 id=&quot;choosing-a-name&quot; tabindex=&quot;-1&quot;&gt;Choosing a name &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#choosing-a-name&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every website on the Internet is reached via a domain name. The choice provider for &lt;a href=&quot;https://static.quest/posts/static-site-generators/https//static.quest&quot;&gt;Staic.Quest&lt;/a&gt; is &lt;a href=&quot;https://porkbun.com/&quot;&gt;porkbun&lt;/a&gt;. They have a fun name and good prices.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t want to spend a lot of money yearly, many of the hosting providers mentioned also allow you to have a subdomain off of theirs for convenience.&lt;/p&gt;
+&lt;h2 id=&quot;whats-next&quot; tabindex=&quot;-1&quot;&gt;What&#39;s next &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#whats-next&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are so many further places we could go, but let&#39;s have some other bloggers and website developers tell you in the &lt;a href=&quot;http://localhost:8080/posts/resources/&quot;&gt;resources&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Just start a blog</title>
+		<link href="https://static.quest/posts/resources/"/>
+		<updated>2024-10-11T00:00:00Z</updated>
+		<id>https://static.quest/posts/resources/</id>
+		<content type="html">&lt;p&gt;Finding a good community to help you along in your web journey is a powerful thing. There are places to improve design, backend work, writing, and more. Here are a few great resources to help in some of those ideas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://moddedbear.com/go-start-a-blog/&quot;&gt;Go start a blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/blogging-on-a-budget/&quot;&gt;Blogging on a budget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days to Offload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://82mhz.net/posts/2024/07/one-year-of-blogging/&quot;&gt;One year of blogging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://claytonerrington.com/blog/year-in-review/&quot;&gt;Year in review&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ctms.me/posts/2024-08-29-running-this-blog-on-a-pixel-5/&quot;&gt;This blog is running on a recycled Google Pixel 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/jekyll/1/&quot;&gt;Jekyll Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/astro/1/&quot;&gt;Astro Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/the-great-paywall/&quot;&gt;The great paywall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/announcing-my-blogroll/&quot;&gt;Announcing my blogroll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This list should hopefully grow and expand over time. If you have something you&#39;d like to share, send a pull request to get it added.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
