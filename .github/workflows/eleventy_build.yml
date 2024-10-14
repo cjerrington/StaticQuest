@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        uses: TartanLlama/actions-eleventy@master
+        uses: cjerrington/actions-eleventy@master
         with:
           cname: static.quest
           install_dependencies: true
