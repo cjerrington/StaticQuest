@@ -15,3 +15,4 @@ jobs:
           publish_branch: gh-pages
           github_token: ${{ secrets.DEPLOY_TOKEN }}
           cname: static.quest
+          install_dependencies: true
