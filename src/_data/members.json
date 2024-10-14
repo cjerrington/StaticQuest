@@ -10,14 +10,14 @@
     "name": "Benjamin Hollon",
     "url": "benjaminhollon.com/",
     "feed": "benjaminhollon.com/musings/feed/",
-    "ssg": "deno",
+    "ssg": "Lume",
     "type": "blog, personal"
   },
   {
     "name": "Jeremy",
     "url": "moddedbear.com/",
     "feed": "moddedbear.com/blog/index.xml",
-    "ssg": "HTML",
+    "ssg": "Hugo",
     "type": "blog, personal"
   },
   {
@@ -36,8 +36,8 @@
   },
   {
     "name": "Lazybear",
-    "url": "lazybear.io/",
-    "feed": "lazybear.io/index.xml",
+    "url": "lazybea.rs/",
+    "feed": "lazybea.rs/index.xml",
     "ssg": "HTML",
     "type": "blog, personal"
   },
@@ -45,7 +45,7 @@
     "name": "R.L. Dane",
     "url": "rldane.space/",
     "feed": "rldane.space/feeds/all.atom.xml",
-    "ssg": "HTML",
+    "ssg": "Pelican",
     "type": "blog, personal"
   },
   {
@@ -66,14 +66,14 @@
     "name": "Andreas",
     "url": "82mhz.net/",
     "feed": "82mhz.net/index.xml",
-    "ssg": "HTML",
+    "ssg": "Hugo",
     "type": "blog, personal"
   },
   {
     "name": "Steve Fenton",
     "url": "www.stevefenton.co.uk/",
     "feed": "www.stevefenton.co.uk/blog/feed.xml",
-    "ssg": "HTML",
+    "ssg": "Astro",
     "type": "blog, personal"
   }
 ]
