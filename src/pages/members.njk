@@ -1,0 +1,42 @@
+---
+title: Memebers
+description: Members of the Static.Quest webring
+eleventyNavigation:
+  key: Members
+  order: 2
+---
+
+Total Members {{ members.length }}
+
+<div class="notice">
+  <a href="/random">Random member</a>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Member</th>
+      <th>Blog Feed</th>
+      <th>Build Method</th>
+      <th>Website type</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for member in members %}
+  <tr>
+    <td>
+      <a href="https://{{ member.url }}" class="member" target="_blank">{{ member.name }}</a> 
+    </td>
+    <td>
+      <a href="https://{{ member.feed }}" class="no-indicator">{{ member.feed }}</a>
+    </td>
+    <td>
+      {{ member.ssg }}
+    </td>
+    <td>
+      {{ member.type }}
+    </td>
+  </tr>
+{% endfor %}
+  </tbody>
+</table>

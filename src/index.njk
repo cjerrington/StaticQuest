@@ -1,0 +1,30 @@
+---
+eleventyComputed: metadata.title
+layout: layouts/home.njk
+description: A dynamic webring
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<!-- Delete this message -->
+<p>
+A web ring focused to list all the amazing static websites. 
+Scoll down to see the list and even join! We are here to show the world of great sites that can be made with pure HTML, CSS, and JavaScript, only relying on the client browser to render the page content.
+</p>
+<!-- Stop deleting -->
+
+<ul>
+  <li><a href="/members/">View the members</a></li>
+  <li><a href="/members/">Join the Quest</a></li>
+  <li><a href="/posts/what-is-a-satic-site/">What are Static Websites?</a></li>
+</ul>
+
+{% set maxPosts = collections.posts.length | min(3) %}
+<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+<p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
