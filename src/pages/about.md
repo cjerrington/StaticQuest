@@ -11,7 +11,7 @@ I've been in the static website realm for over 10 years and have used many platf
 
 Static.Quest was a way to have a place for all of these awesome static websites share their design, content, and allow others to find them.
 
-Web Rings have been around for a long time since the Internet was fist created.
+Web Rings have been around for a long time since the Internet was first created.
 
 ## Web Rings: A Brief History
 
