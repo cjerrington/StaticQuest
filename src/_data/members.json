@@ -75,5 +75,12 @@
     "feed": "www.stevefenton.co.uk/blog/feed.xml",
     "ssg": "Astro",
     "type": "blog, personal"
+  },
+  {
+    "name": "András N.",
+    "url": "sunarch.dev",
+    "feed": "static.quest/members/#",
+    "ssg": "Lektor",
+    "type": "personal, tech"
   }
 ]
