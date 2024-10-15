@@ -1,49 +1,49 @@
 [
   {
     "name": "Adam's Desk",
-    "url": "www.adamsdesk.com/",
+    "url": "www.adamsdesk.com",
     "feed": "www.adamsdesk.com/feed/blog.xml",
     "ssg": "jekyll",
     "type": "blog, tech"
   },
   {
     "name": "Benjamin Hollon",
-    "url": "benjaminhollon.com/",
+    "url": "benjaminhollon.com",
     "feed": "benjaminhollon.com/musings/feed/",
     "ssg": "Lume",
     "type": "blog, personal"
   },
   {
     "name": "Jeremy",
-    "url": "moddedbear.com/",
+    "url": "moddedbear.com",
     "feed": "moddedbear.com/blog/index.xml",
     "ssg": "Hugo",
     "type": "blog, personal"
   },
   {
     "name": "Joel G.",
-    "url": "joelchrono.xyz/",
+    "url": "joelchrono.xyz",
     "feed": "joelchrono.xyz/feed.xml",
     "ssg": "jekyll",
     "type": "blog, personal"
   },
   {
     "name": "Konstantin Tutsch",
-    "url": "konstantintutsch.com/",
+    "url": "konstantintutsch.com",
     "feed": "konstantintutsch.com/feed.xml",
     "ssg": "eleventy",
     "type": "blog, personal"
   },
   {
     "name": "Lazybear",
-    "url": "lazybea.rs/",
+    "url": "lazybea.rs",
     "feed": "lazybea.rs/index.xml",
     "ssg": "HTML",
     "type": "blog, personal"
   },
   {
     "name": "R.L. Dane",
-    "url": "rldane.space/",
+    "url": "rldane.space",
     "feed": "rldane.space/feeds/all.atom.xml",
     "ssg": "Pelican",
     "type": "blog, personal"
@@ -57,21 +57,21 @@
   },
   {
     "name": "Clayton Errington",
-    "url": "claytonerrington.com/",
+    "url": "claytonerrington.com",
     "feed": "claytonerrington.com/feed/",
     "ssg": "eleventy",
     "type": "blog, personal"
   },
   {
     "name": "Andreas",
-    "url": "82mhz.net/",
+    "url": "82mhz.net",
     "feed": "82mhz.net/index.xml",
     "ssg": "Hugo",
     "type": "blog, personal"
   },
   {
     "name": "Steve Fenton",
-    "url": "www.stevefenton.co.uk/",
+    "url": "www.stevefenton.co.uk",
     "feed": "www.stevefenton.co.uk/blog/feed.xml",
     "ssg": "Astro",
     "type": "blog, personal"
