@@ -22,6 +22,7 @@ To help some content producers, the use of a Static Site Generator is helpful. T
 - [VuePress](https://vuepress.vuejs.org/)
 - [Eleventy](https://www.11ty.dev/)
 - [Pelican](https://getpelican.com/)
+- [Lektor](https://www.getlektor.com)
 
 There are plenty more: https://jamstack.org/generators/
 
