@@ -51,7 +51,7 @@
   </url>
   
   <url>
-    <loc>https://static.quest/posts/what-is-a-satic-site/</loc>
+    <loc>https://static.quest/posts/what-is-a-static-site/</loc>
     <lastmod>2024-10-11</lastmod>
   </url>
   
@@ -115,7 +115,7 @@
 
   <footer>
     <p><a href="/members">View Members</a> | <a href="/join">Join the Quest</a> | <a href="/acknowledgements">Acknowledgements</a></p>
-    <p>Build with <a href="https://www.11ty.dev/">Eleventy</a> by <a href="https://claytonerrington">Clayton Errington</a></p>
+    <p>Build with <a href="https://www.11ty.dev/">Eleventy</a> by <a href="https://claytonerrington.com">Clayton Errington</a></p>
   </footer>
 
 </body>
