@@ -37,16 +37,16 @@ Hosting a website is the next step after building it. There are many free platfo
 - [Codeberg Pages](https://codeberg.page/)
 - [Cloudflare Pages](https://pages.cloudflare.com/)
 
-Many of these providers integrate with the Git actions to build and deploy the site to their hosting platform. The addition of Git provides some with a workflow that makes it easy to add their content and publish with out needing to be hands on or knowledgeable in the hosting aspect of web content.
+Many of these providers integrate with the Git actions to build and deploy the site to their hosting platform. The addition of Git provides some with a workflow that makes it easy to add their content and publish without needing to be hands on or knowledgeable in the hosting aspect of web content.
 
 This is not a comprehensive list, but a small one to help those who wan to get into web design, blogging, and sharing their content.
 
 ## Choosing a name
 
-Every website on the Internet is reached via a domain name. The choice provider for [Staic.Quest](https//static.quest) is [porkbun](https://porkbun.com/). They have a fun name and good prices.
+Every website on the Internet is reached via a domain name. The choice provider for [Staic.Quest](https://static.quest) is [porkbun](https://porkbun.com/). They have a fun name and good prices.
 
 If you don't want to spend a lot of money yearly, many of the hosting providers mentioned also allow you to have a subdomain off of theirs for convenience.
 
 ## What's next
 
-There are so many further places we could go, but let's have some other bloggers and website developers tell you in the [resources](http://localhost:8080/posts/resources/).
+There are so many further places we could go, but let's have some other bloggers and website developers tell you in the [resources](/posts/resources/).
