@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy({"node_modules/simpledotcss/simple.min.css": "css/simple.min.css"});
   eleventyConfig.addPassthroughCopy({"_data/members.json": "members.json"});
-  eleventyConfig.addPassthroughCopy({"random.js": "random.js"});
+  eleventyConfig.addPassthroughCopy({"src/random.js": "random.js"});
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
