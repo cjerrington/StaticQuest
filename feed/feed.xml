@@ -62,6 +62,7 @@
 &lt;li&gt;&lt;a href=&quot;https://vuepress.vuejs.org/&quot;&gt;VuePress&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://getpelican.com/&quot;&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.getlektor.com/&quot;&gt;Lektor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There are plenty more: &lt;a href=&quot;https://jamstack.org/generators/&quot;&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Most of these generators rely on technologies like NodeJS, Python, Ruby, Go and others. The generators are able to build simple personal sites to large complex business pages, the choices are endless.&lt;/p&gt;
