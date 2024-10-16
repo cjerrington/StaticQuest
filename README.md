@@ -8,8 +8,6 @@ Scroll down to see the list and even join! We are here to show the world of grea
 - [Join the Quest](https://static.quest/join/)
 - [What are Static Websites?](https://static.quest/posts/what-is-a-satic-site/)
 
-
-
 ## Getting Started
 
 ### 1. Clone this Repository
