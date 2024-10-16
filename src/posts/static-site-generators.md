@@ -10,19 +10,19 @@ Static sites are a great part of the small web. They are easy to configure, depl
 
 ## Static Site Generators
 
-To help some content producers, the use of a Static Site Generator is helpful. This allows the user to design their site and functionality, then just add content where it is needed and the generator builds complete HTML from template files. Examples of Static Site Generators in no particular order:
+To help some content producers, the use of a Static Site Generator is helpful. This allows the user to design their site and functionality, then just add content where it is needed and the generator builds complete HTML from template files. Examples of Static Site Generators (in alphabetical order):
 
-- [Next.js](https://nextjs.org/)
-- [Hugo](https://gohugo.io/)
-- [Gatsby](https://www.gatsbyjs.com/)
-- [Docusaurus](https://docusaurus.io/)
-- [Nuxt](https://nuxt.com/)
-- [Jekyll](https://jekyllrb.com/)
-- [Astro](https://astro.build/)
-- [VuePress](https://vuepress.vuejs.org/)
-- [Eleventy](https://www.11ty.dev/)
-- [Pelican](https://getpelican.com/)
-- [Lektor](https://www.getlektor.com)
+- [Astro](https://astro.build) *(JS)*
+- [Docusaurus](https://docusaurus.io) *(JS+React)*
+- [Eleventy](https://www.11ty.dev) *(JS)*
+- [Gatsby](https://www.gatsbyjs.com) *(JS/TS+React)*
+- [Hugo](https://gohugo.io) *(Go)*
+- [Jekyll](https://jekyllrb.com) *(Ruby)*
+- [Lektor](https://www.getlektor.com) *(Python)*
+- [Next.js](https://nextjs.org) *(JS/TS+React)*
+- [Nuxt](https://nuxt.com) *(JS/TS+Vue)*
+- [Pelican](https://getpelican.com) *(Python)*
+- [VuePress](https://vuepress.vuejs.org) *(JS+Vue)*
 
 There are plenty more: https://jamstack.org/generators/
 
