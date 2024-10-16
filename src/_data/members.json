@@ -89,5 +89,12 @@
     "feed": "static.quest/members/#",
     "ssg": "Lektor",
     "type": "personal, tech"
+  },
+  {
+    "name": "Tom's Homepage",
+    "host": "ttntm.me",
+    "feed": "https://ttntm.me/everything.xml",
+    "ssg": "eleventy",
+    "type": "personal, tech"
   }
 ]
