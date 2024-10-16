@@ -36,9 +36,9 @@ As a member of a web ring it is common to add links to the web ring and its memb
 <p>
   A member of the <a href="https://static.quest">Static.Quest</a> web ring! 
   <br />
-  <a href="https://static.quest/previous/?host=static.quest">&#8592;
+  <a href="https://static.quest/previous/?host=static.quest">&#8592;</a>
   <a href="https://static.quest/members">View Members</a>
-  <a href="https://static.quest/next/?host=static.quest">&#8594;
+  <a href="https://static.quest/next/?host=static.quest">&#8594;</a>
   <br />
   <a href="https://static.quest/random">Feeling lucky?</a>
 </p>
