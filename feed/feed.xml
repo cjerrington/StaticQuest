@@ -15,7 +15,7 @@
 	<entry>
 		<title>What is a static website?</title>
 		<link href="https://static.quest/posts/what-is-a-static-site/"/>
-		<updated>2024-10-16T15:25:30Z</updated>
+		<updated>2024-10-16T16:03:25Z</updated>
 		<id>https://static.quest/posts/what-is-a-static-site/</id>
 		<content type="html">&lt;h2 id=&quot;what-is-a-static-website&quot; tabindex=&quot;-1&quot;&gt;What is a Static Website? &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-static-site/#what-is-a-static-website&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A static website is like a digital brochure that remains unchanged unless manually updated. Every page of a static website is a fixed HTML file, meaning the content is pre-determined and doesn&#39;t dynamically change based on user interactions or real-time data.&lt;/p&gt;
@@ -46,23 +46,23 @@
 	<entry>
 		<title>Building a static site</title>
 		<link href="https://static.quest/posts/static-site-generators/"/>
-		<updated>2024-10-16T15:25:30Z</updated>
+		<updated>2024-10-16T16:03:25Z</updated>
 		<id>https://static.quest/posts/static-site-generators/</id>
 		<content type="html">&lt;p&gt;Static sites are a great part of the small web. They are easy to configure, deploy, and maintain. You can use a static site generator or write the HTML yourself.&lt;/p&gt;
 &lt;h2 id=&quot;static-site-generators&quot; tabindex=&quot;-1&quot;&gt;Static Site Generators &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#static-site-generators&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;To help some content producers, the use of a Static Site Generator is helpful. This allows the user to design their site and functionality, then just add content where it is needed and the generator builds complete HTML from template files. Examples of Static Site Generators in no particular order:&lt;/p&gt;
+&lt;p&gt;To help some content producers, the use of a Static Site Generator is helpful. This allows the user to design their site and functionality, then just add content where it is needed and the generator builds complete HTML from template files. Examples of Static Site Generators (in alphabetical order):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://nextjs.org/&quot;&gt;Next.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docusaurus.io/&quot;&gt;Docusaurus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://nuxt.com/&quot;&gt;Nuxt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vuepress.vuejs.org/&quot;&gt;VuePress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://getpelican.com/&quot;&gt;Pelican&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.getlektor.com/&quot;&gt;Lektor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt; &lt;em&gt;(JS)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docusaurus.io/&quot;&gt;Docusaurus&lt;/a&gt; &lt;em&gt;(JS+React)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; &lt;em&gt;(JS)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt; &lt;em&gt;(JS/TS+React)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt; &lt;em&gt;(Go)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; &lt;em&gt;(Ruby)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.getlektor.com/&quot;&gt;Lektor&lt;/a&gt; &lt;em&gt;(Python)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nextjs.org/&quot;&gt;Next.js&lt;/a&gt; &lt;em&gt;(JS/TS+React)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nuxt.com/&quot;&gt;Nuxt&lt;/a&gt; &lt;em&gt;(JS/TS+Vue)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://getpelican.com/&quot;&gt;Pelican&lt;/a&gt; &lt;em&gt;(Python)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuepress.vuejs.org/&quot;&gt;VuePress&lt;/a&gt; &lt;em&gt;(JS+Vue)&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There are plenty more: &lt;a href=&quot;https://jamstack.org/generators/&quot;&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Most of these generators rely on technologies like NodeJS, Python, Ruby, Go and others. The generators are able to build simple personal sites to large complex business pages, the choices are endless.&lt;/p&gt;
@@ -88,20 +88,20 @@
 	<entry>
 		<title>Just start a blog</title>
 		<link href="https://static.quest/posts/resources/"/>
-		<updated>2024-10-16T15:25:30Z</updated>
+		<updated>2024-10-16T16:03:25Z</updated>
 		<id>https://static.quest/posts/resources/</id>
 		<content type="html">&lt;p&gt;Finding a good community to help you along in your web journey is a powerful thing. There are places to improve design, backend work, writing, and more. Here are a few great resources to help in some of those ideas.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://moddedbear.com/go-start-a-blog/&quot;&gt;Go start a blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/blogging-on-a-budget/&quot;&gt;Blogging on a budget&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days to Offload&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://82mhz.net/posts/2024/07/one-year-of-blogging/&quot;&gt;One year of blogging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://claytonerrington.com/blog/year-in-review/&quot;&gt;Year in review&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ctms.me/posts/2024-08-29-running-this-blog-on-a-pixel-5/&quot;&gt;This blog is running on a recycled Google Pixel 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/jekyll/1/&quot;&gt;Jekyll Archive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/astro/1/&quot;&gt;Astro Archive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/the-great-paywall/&quot;&gt;The great paywall&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/announcing-my-blogroll/&quot;&gt;Announcing my blogroll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://moddedbear.com/go-start-a-blog/&quot;&gt;Go start a blog&lt;/a&gt; by &lt;em&gt;Jeremy&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/blogging-on-a-budget/&quot;&gt;Blogging on a budget&lt;/a&gt; by &lt;em&gt;Benjamin Hollon&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days to Offload&lt;/a&gt; by &lt;em&gt;Kev Quirk&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://82mhz.net/posts/2024/07/one-year-of-blogging/&quot;&gt;One year of blogging&lt;/a&gt; by &lt;em&gt;Andreas&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://claytonerrington.com/blog/year-in-review/&quot;&gt;Year in review&lt;/a&gt; by &lt;em&gt;Clayton Errington&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ctms.me/posts/2024-08-29-running-this-blog-on-a-pixel-5/&quot;&gt;This blog is running on a recycled Google Pixel 5&lt;/a&gt; by &lt;em&gt;Dom Corriveau&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/jekyll/1/&quot;&gt;Jekyll Archive&lt;/a&gt; by &lt;em&gt;Steve Fenton&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.stevefenton.co.uk/tag/astro/1/&quot;&gt;Astro Archive&lt;/a&gt; by &lt;em&gt;Steve Fenton&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/the-great-paywall/&quot;&gt;The great paywall&lt;/a&gt; by &lt;em&gt;Benjamin Hollon&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://benjaminhollon.com/musings/announcing-my-blogroll/&quot;&gt;Announcing my blogroll&lt;/a&gt; by &lt;em&gt;Benjamin Hollon&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This list should hopefully grow and expand over time. If you have something you&#39;d like to share, send a pull request to get it added.&lt;/p&gt;
 </content>
