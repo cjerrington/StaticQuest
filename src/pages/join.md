@@ -10,7 +10,7 @@ The only requirement is to have a static site! This is the honor system and we'r
 
 ## Adding your site
 
-Just clone/fork the [repository](https://github.com/cjerrington/StaticQuest), update the `src/_data/members.json` file with your information and make a pull request, and we'll get it added.
+Just clone/fork the [repository](https://github.com/cjerrington/StaticQuest), update the `src/_data/members.json` file with your information and make a pull request, and we'll get it added. You can also open a [Join Static.Quest issue](https://github.com/cjerrington/StaticQuest/issues/new/choose), and it can get added by the team.
 
 Add your information in the JSON data and it will be rendered to the table on the [Members](/members) page.
 
@@ -36,9 +36,9 @@ As a member of a web ring it is common to add links to the web ring and its memb
 <p>
   A member of the <a href="https://static.quest">Static.Quest</a> web ring! 
   <br />
-  <a href="https://static.quest/previous/index.html?host=static.quest">&#8592;
+  <a href="https://static.quest/previous/?host=static.quest">&#8592;
   <a href="https://static.quest/members">View Members</a>
-  <a href="https://static.quest/next/index.html?host=static.quest">&#8594;
+  <a href="https://static.quest/next/?host=static.quest">&#8594;
   <br />
   <a href="https://static.quest/random">Feeling lucky?</a>
 </p>
@@ -48,9 +48,9 @@ As a member of a web ring it is common to add links to the web ring and its memb
 
   A member of the [Static.Quest](https://static.quest) web ring!
   <br />
-  [&#8592;](/previous/index.html?host=static.quest)
+  [&#8592;](/previous/?host=static.quest)
   [View Members](/members)
-  [&#8594;](/next/index.html?host=static.quest)
+  [&#8594;](/next/?host=static.quest)
   <br />
   [Feeling lucky?](https://static.quest/random)
 
