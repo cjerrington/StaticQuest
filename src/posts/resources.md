@@ -18,5 +18,6 @@ Finding a good community to help you along in your web journey is a powerful thi
 - [Astro Archive](https://www.stevefenton.co.uk/tag/astro/1/) by *Steve Fenton*
 - [The great paywall](https://benjaminhollon.com/musings/the-great-paywall/) by *Benjamin Hollon*
 - [Announcing my blogroll](https://benjaminhollon.com/musings/announcing-my-blogroll/) by *Benjamin Hollon*
+- [Different Types of Web Hosting Explained](https://www.adamsdesk.com/posts/different-types-of-web-hosting-explained/) by *Adamsdesk*
 
 This list should hopefully grow and expand over time. If you have something you'd like to share, send a pull request to get it added.

@@ -7,7 +7,7 @@
     "type": "blog"
   },
   {
-    "name": "Adam's Desk",
+    "name": "Adamsdesk",
     "host": "www.adamsdesk.com",
     "feed": "www.adamsdesk.com/feed/blog.xml",
     "ssg": "jekyll",
