@@ -1,0 +1,28 @@
+main p:first-child {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+a[href^='http']:not([href*='localhost:8080']):not(
+    [href*='claytonerrington.com']
+  ):not(.button) {
+  padding-inline-end: 0.8em;
+}
+
+a[href^='http']:not([href*='localhost:8080']):not(
+    [href*='claytonerrington.com']
+  ):not(.no-indicator)::after {
+  position: absolute;
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  background-image: url('/img/external.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% auto;
+  /* alternative text rules */
+  content: '(external link)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em; /* the width of the icon */
+}

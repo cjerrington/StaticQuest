@@ -10,20 +10,20 @@ function querystring(key) {
  // query the 'host' value
  var host = querystring("host")[0];
  
-fetch('/members.json')
+fetch('/assets/members.json')
     .then((response) => response.json())
     .then((json) => { 
         console.log("Host: " + host);
         for (var i = 0; i < json.length; i++) {
             for (var key in json[i]) {
                 if (json[i][key] == host) {
-                    if (i == json.length-1){
-                        console.log('At the end of the rope...')
-                        console.log(key + ' == ' + json[i-json.length+1][key] );
-                        window.location.href = "https://" + json[i-json.length+1][key]
+                    if (i == 0){
+                        console.log('At the beginning end of the rope...')
+                        console.log(key + ' == ' + json[i+json.length-1][key] );
+                        window.location.href = "https://" + json[i+json.length-1][key]
                     }else{
-                        console.log('Next stop... ' + json[i+1][key] );
-                        window.location.href = "https://" + json[i+1][key]
+                        console.log('Next stop... ' + json[i-1][key] );
+                        window.location.href = "https://" + json[i-1][key]
                     }
                 }
             }

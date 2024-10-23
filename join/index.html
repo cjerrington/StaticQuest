@@ -11,13 +11,12 @@
 
   <link rel="stylesheet" href="/css/simple.min.css">
   <link rel="stylesheet" href="/css/custom.css">
-  <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
-  <link rel="stylesheet" href="/css/prism-diff.css">
 
-  <link rel="stylesheet" href="/css/index.css">
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Static.Quest">
   <link rel="alternate" href="/feed/feed.json" type="application/json" title="Static.Quest">
-  <script defer src="https://analytics.claytonerrington.com/script.js" data-website-id="6603df20-de18-4911-b9c4-f80942d2a374"></script>
+  
+  <!-- This is a comment -->
+  
 </head>
 
 <body>
@@ -40,19 +39,19 @@
     
 <p>The only requirement is to have a static site! This is the honor system and we're not going to ask for the source or hosting or your site. We do have this in the data file that lists our members, just to show the various methods that are available to you to build your sites.</p>
 <h2 id="adding-your-site" tabindex="-1">Adding your site <a class="direct-link" href="#adding-your-site" aria-hidden="true">#</a></h2>
-<p>Just clone/fork the <a href="https://github.com/cjerrington/StaticQuest">repository</a>, update the <code>src/_data/members.json</code> file with your information and make a pull request, and we'll get it added. You can also open a <a href="https://github.com/cjerrington/StaticQuest/issues/new/choose">Join Static.Quest issue</a>, and it can get added by the team.</p>
+<p>Just clone/fork the <a href="https://github.com/cjerrington/StaticQuest">repository</a>, add your website file to <code>src/members/</code> folder with your information and make a pull request, and we'll get it added. You can also open a <a href="https://github.com/cjerrington/StaticQuest/issues/new/choose">Join Static.Quest issue</a>, and it can get added by the team.</p>
 <p>Add your information in the JSON data and it will be rendered to the table on the <a href="/members">Members</a> page.</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Your Name"</span><span class="token punctuation">,</span>
-  <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"yourwebsite.com/"</span><span class="token punctuation">,</span>
-  <span class="token property">"feed"</span><span class="token operator">:</span> <span class="token string">"yourwebsite.com/feed/"</span><span class="token punctuation">,</span>
-  <span class="token property">"ssg"</span><span class="token operator">:</span> <span class="token string">"static site generator"</span><span class="token punctuation">,</span>
-  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"blog, personal, art, technology, etc"</span>
-<span class="token punctuation">}</span></code></pre>
-<p>You can add what you'd like in the <code>JSON</code>, but the name and website are kinda required. Adding an RSS feed is for those who like to subscribe and its readily available.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">"Your Name"</span><span class="token punctuation">,</span>
+<span class="token key atrule">host</span><span class="token punctuation">:</span> <span class="token string">"yourwebsite.com/"</span><span class="token punctuation">,</span>
+<span class="token key atrule">feed</span><span class="token punctuation">:</span> <span class="token string">"yourwebsite.com/feed/"</span><span class="token punctuation">,</span>
+<span class="token key atrule">ssg</span><span class="token punctuation">:</span> <span class="token string">"static site generator"</span><span class="token punctuation">,</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"blog, personal, art, technology, etc"</span>
+<span class="token punctuation">-</span><span class="token punctuation">-</span></code></pre>
+<p>You can add what you'd like in the <code>yaml</code>, but the name and website are kinda required. Adding an RSS feed is for those who like to subscribe and its readily available.</p>
 <p>The <code>ssg</code> is for the Static Site Generator used, and would be neat as the web ring grows to see the variety of methods used to generate your awesome website.</p>
 <h2 id="add-static-quest-to-your-site" tabindex="-1">Add Static.Quest to your site <a class="direct-link" href="#add-static-quest-to-your-site" aria-hidden="true">#</a></h2>
-<p>As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to update the <code>host</code> to the <code>host</code> you have in the <code>members.json</code> file.</p>
+<p>As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to update the <code>host</code> to the <code>host</code> you have in your <code>name.md</code> file.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
   A member of the <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Static.Quest<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> web ring! 
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span>

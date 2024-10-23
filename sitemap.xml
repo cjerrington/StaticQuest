@@ -11,13 +11,12 @@
 
   <link rel="stylesheet" href="/css/simple.min.css">
   <link rel="stylesheet" href="/css/custom.css">
-  <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
-  <link rel="stylesheet" href="/css/prism-diff.css">
 
-  <link rel="stylesheet" href="/css/index.css">
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Static.Quest">
   <link rel="alternate" href="/feed/feed.json" type="application/json" title="Static.Quest">
-  <script defer src="https://analytics.claytonerrington.com/script.js" data-website-id="6603df20-de18-4911-b9c4-f80942d2a374"></script>
+  
+  <!-- This is a comment -->
+  
 </head>
 
 <body>
@@ -58,67 +57,142 @@
   
   <url>
     <loc>https://static.quest/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/</loc>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/next/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/about/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/acknowledgements/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/archive/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/join/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/members/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/page-list/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/tags/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/tags/resources/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/tags/getting-started/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://static.quest/tags/members/</loc>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/previous/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
   
   <url>
     <loc>https://static.quest/random/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-23</lastmod>
   </url>
 </urlset>
 
