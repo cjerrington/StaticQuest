@@ -11,13 +11,10 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 module.exports = function(eleventyConfig) {
   // Copy the `img`, `css`, and `simpledotcss` folders to the output
   eleventyConfig.addPassthroughCopy("CNAME");
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({"node_modules/simpledotcss/simple.min.css": "css/simple.min.css"});
-  eleventyConfig.addPassthroughCopy({"src/_data/members.json": "members.json"});
-  eleventyConfig.addPassthroughCopy({"src/random.js": "random.js"});
-  eleventyConfig.addPassthroughCopy({"src/next.js": "next.js"});
-  eleventyConfig.addPassthroughCopy({"src/previous.js": "previous.js"});
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);

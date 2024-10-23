@@ -44,7 +44,7 @@ This is not a comprehensive list, but a small one to help those who wan to get i
 
 ## Choosing a name
 
-Every website on the Internet is reached via a domain name. The choice provider for [Staic.Quest](https://static.quest) is [porkbun](https://porkbun.com/). They have a fun name and good prices.
+Every website on the Internet is reached via a domain name. The choice provider for [Static.Quest](https://static.quest) is [Porkbun](https://porkbun.com/). They have a fun name and good prices.
 
 If you don't want to spend a lot of money yearly, many of the hosting providers mentioned also allow you to have a subdomain off of theirs for convenience.
 

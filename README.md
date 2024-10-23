@@ -82,3 +82,15 @@ The adventure awaits
 The only requirement is to have a static site! This is the honor system and we're not going to ask for the source or hosting or your site. We do have this in the data file that lists our members, just to show the various methods that are available to you to build your sites.
 
 You can add a pull request for adding your site, or starting a [Join Static.Quest issue](https://github.com/cjerrington/StaticQuest/issues/new/choose), and it can get added by the team.
+
+Add your website content to `/src/members` folder with your information:
+
+```yaml
+---
+name: "Your Name",
+host: "yourwebsite.com/",
+feed: "yourwebsite.com/feed/",
+ssg: "static site generator",
+type: "blog, personal, art, technology, etc"
+---
+```

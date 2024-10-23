@@ -1,0 +1,15 @@
+---
+permalink: /assets/members.json
+eleventyExcludeFromCollections: true
+---
+[
+{%- for member in collections.members %}
+  {
+    "host": "{{ member.data.host }}"
+  {%- if loop.last %}
+  }
+  {%- else %}
+  },
+  {%- endif %}
+{%- endfor %}
+]
