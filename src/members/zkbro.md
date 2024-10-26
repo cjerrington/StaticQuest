@@ -1,7 +1,7 @@
 ---
 name: zkbro
-host: https://html-chunder.neocities.org/
-feed: https://html-chunder.neocities.org/atom.xml
+host: html-chunder.neocities.org/
+feed: html-chunder.neocities.org/atom.xml
 ssg: Zola
 type: 'blog, personal, running, tech'
 ---
