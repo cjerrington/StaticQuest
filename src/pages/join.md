@@ -21,7 +21,7 @@ host: "yourwebsite.com/",
 feed: "yourwebsite.com/feed/",
 ssg: "static site generator",
 type: "blog, personal, art, technology, etc"
---
+---
 ```
 
 You can add what you'd like in the `yaml`, but the name and website are kinda required. Adding an RSS feed is for those who like to subscribe and its readily available.
@@ -55,3 +55,19 @@ As a member of a web ring it is common to add links to the web ring and its memb
   [Feeling lucky?](https://static.quest/random)
 
 </div>
+
+## Membership rules
+
+### Website content
+
+As it's nigh impossible for me, or anyone else, to decern the validity of one's claim to Static.Quest status, almost any site should get accepted, barring the following:
+
+- Hate speech
+- Racism, sexism, homophobia, transphobia, ableism or any other bigotry
+- Illegal or immoral or otherwise NSFW content
+- Sites with machine generated text and/or articles
+- Sites with little or no actual content
+
+Do, however, note that this list is not exhaustive. I reserve the right to deny join requests at my discretion, for any reason.
+
+If you find a site that violates this please submit an [issue](https://github.com/cjerrington/StaticQuest/issues/new/choose) or please contact me [here](/contact).
