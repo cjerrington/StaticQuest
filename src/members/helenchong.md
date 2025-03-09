@@ -2,6 +2,6 @@
 name: "Helen Chong",
 host: "helenchong.dev",
 feed: "helenchong.dev/blog/feed.xml",
-ssg: "eleventy",
+ssg: "Eleventy",
 type: "blog, portfolio, technology"
 ---
