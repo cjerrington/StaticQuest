@@ -1,0 +1,13 @@
+name: Eleventy Test Build
+on: [pull_request]
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        uses: cjerrington/actions-eleventy@master
+        with:
+          cname: static.quest
+          install_dependencies: true
