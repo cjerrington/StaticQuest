@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>RSS Feeds for all Static.Quest's members</title>
+        <dateCreated>Tue, 11 Mar 2025 02:43:35 GMT</dateCreated>
+    </head>
+    <body>
+            <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
+            
+        
+            <outline text="Adamsdesk" title="Adamsdesk" type="rss" xmlUrl="www.adamsdesk.com/feed/blog.xml" htmlUrl="www.adamsdesk.com"/>
+            
+        
+            <outline text="Benjamin Hollon" title="Benjamin Hollon" type="rss" xmlUrl="benjaminhollon.com/musings/feed/" htmlUrl="benjaminhollon.com"/>
+            
+        
+            <outline text="Bobby Hiltz" title="Bobby Hiltz" type="rss" xmlUrl="bobbyhiltz.com/rss.xml" htmlUrl="bobbyhiltz.com"/>
+            
+        
+            <outline text="Clayton Errington" title="Clayton Errington" type="rss" xmlUrl="claytonerrington.com/feed/" htmlUrl="claytonerrington.com"/>
+            
+        
+            <outline text="Duanin2" title="Duanin2" type="rss" xmlUrl="duanin2.top/feed.rss" htmlUrl="duanin2.top"/>
+            
+        
+            <outline text="Helen Chong" title="Helen Chong" type="rss" xmlUrl="helenchong.dev/blog/feed.xml" htmlUrl="helenchong.dev"/>
+            
+        
+            <outline text="Jeremy" title="Jeremy" type="rss" xmlUrl="moddedbear.com/blog/index.xml" htmlUrl="moddedbear.com"/>
+            
+        
+            <outline text="Joel G." title="Joel G." type="rss" xmlUrl="joelchrono.xyz/feed.xml" htmlUrl="joelchrono.xyz"/>
+            
+        
+        
+            <outline text="Konstantin Tutsch" title="Konstantin Tutsch" type="rss" xmlUrl="konstantintutsch.com/feed.xml" htmlUrl="konstantintutsch.com"/>
+            
+        
+            <outline text="Lazybear" title="Lazybear" type="rss" xmlUrl="lazybea.rs/index.xml" htmlUrl="lazybea.rs"/>
+            
+        
+            <outline text="D. Moonfire" title="D. Moonfire" type="rss" xmlUrl="d.moonfire.us/atom.xml" htmlUrl="d.moonfire.us"/>
+            
+        
+            <outline text="OrbitalMartian" title="OrbitalMartian" type="rss" xmlUrl="orbitalmartian.codeberg.page/feed.xml" htmlUrl="orbitalmartian.codeberg.page"/>
+            
+        
+            <outline text="R.L. Dane" title="R.L. Dane" type="rss" xmlUrl="rldane.space/feeds/all.atom.xml" htmlUrl="rldane.space"/>
+            
+        
+            <outline text="starbreaker.org" title="starbreaker.org" type="rss" xmlUrl="starbreaker.org/follow/everything.xml" htmlUrl="starbreaker.org"/>
+            
+        
+            <outline text="Static.Quest" title="Static.Quest" type="rss" xmlUrl="static.quest/feed/feed.xml" htmlUrl="static.quest"/>
+            
+        
+            <outline text="Steve Fenton" title="Steve Fenton" type="rss" xmlUrl="www.stevefenton.co.uk/blog/feed.xml" htmlUrl="www.stevefenton.co.uk"/>
+            
+        
+        
+            <outline text="Tom&#39;s Homepage" title="Tom&#39;s Homepage" type="rss" xmlUrl="ttntm.me/everything.xml" htmlUrl="ttntm.me"/>
+            
+        
+            <outline text="Zach Leatherman" title="Zach Leatherman" type="rss" xmlUrl="www.zachleat.com/web/feed/" htmlUrl="www.zachleat.com"/>
+            
+        
+            <outline text="zkbro" title="zkbro" type="rss" xmlUrl="html-chunder.neocities.org/atom.xml" htmlUrl="html-chunder.neocities.org"/>
+            
+        
+    </body>
+</opml>
