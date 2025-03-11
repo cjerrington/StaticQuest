@@ -1,5 +1,6 @@
 // get the uri 
 
+/*
 function querystring(key) {
     var re=new RegExp('(?:\\?|&)'+key+'=(.*?)(?=&|$)','gi');
     var r=[], m;
@@ -7,9 +8,13 @@ function querystring(key) {
     return r;
  }
 
- // query the 'host' value
- var host = querystring("host")[0];
- 
+// query the 'host' value
+var host = querystring("host")[0];
+*/
+
+var url = new URL(window.location) 
+var host = url.searchParams.get('host')
+
 fetch('/assets/members.json')
     .then((response) => response.json())
     .then((json) => { 
