@@ -1,5 +1,11 @@
 name: Eleventy Build
-on: [push]
+on:
+  pull_request:
+    branches: [ main ]
+    types:
+      - closed
+  push:
+    branches: [ main ]
 
 jobs:
   build_deploy:
