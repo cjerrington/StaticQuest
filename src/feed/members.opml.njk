@@ -1,0 +1,18 @@
+---
+permalink: /feed/members-opml.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>RSS Feeds for all Static.Quest's members</title>
+        <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
+    </head>
+    <body>
+        {%- for site in collections.members -%}
+            {% if site.data.feed %}
+            <outline text="{{ site.data.name }}" title="{{ site.data.name }}" type="rss" xmlUrl="{{ site.data.feed }}" htmlUrl="{{ site.data.host }}"/>
+            {% endif %}
+        {% endfor %}
+    </body>
+</opml>
