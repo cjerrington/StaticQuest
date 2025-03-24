@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Tue, 11 Mar 2025 03:36:52 GMT</dateCreated>
+        <dateCreated>Mon, 24 Mar 2025 03:47:35 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -62,6 +62,9 @@
         
         
             <outline text="Tom&#39;s Homepage" title="Tom&#39;s Homepage" type="rss" xmlUrl="ttntm.me/everything.xml" htmlUrl="ttntm.me"/>
+            
+        
+            <outline text="Verbose Guacamole" title="Verbose Guacamole" type="rss" xmlUrl="verboseguacamole.com/feed/" htmlUrl="verboseguacamole.com"/>
             
         
             <outline text="Zach Leatherman" title="Zach Leatherman" type="rss" xmlUrl="www.zachleat.com/web/feed/" htmlUrl="www.zachleat.com"/>
