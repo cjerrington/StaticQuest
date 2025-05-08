@@ -15,7 +15,7 @@
 	<entry>
 		<title>What is a static website?</title>
 		<link href="https://static.quest/posts/what-is-a-static-site/"/>
-		<updated>2025-04-14T00:56:43Z</updated>
+		<updated>2025-05-08T01:21:47Z</updated>
 		<id>https://static.quest/posts/what-is-a-static-site/</id>
 		<content type="html">&lt;h2 id=&quot;what-is-a-static-website&quot; tabindex=&quot;-1&quot;&gt;What is a Static Website? &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-static-site/#what-is-a-static-website&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A static website is like a digital brochure that remains unchanged unless manually updated. Every page of a static website is a fixed HTML file, meaning the content is pre-determined and doesn&#39;t dynamically change based on user interactions or real-time data.&lt;/p&gt;
@@ -46,7 +46,7 @@
 	<entry>
 		<title>Building a static site</title>
 		<link href="https://static.quest/posts/static-site-generators/"/>
-		<updated>2025-04-14T00:56:43Z</updated>
+		<updated>2025-05-08T01:21:47Z</updated>
 		<id>https://static.quest/posts/static-site-generators/</id>
 		<content type="html">&lt;p&gt;Static sites are a great part of the small web. They are easy to configure, deploy, and maintain. You can use a static site generator or write the HTML yourself.&lt;/p&gt;
 &lt;h2 id=&quot;static-site-generators&quot; tabindex=&quot;-1&quot;&gt;Static Site Generators &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#static-site-generators&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -88,7 +88,7 @@
 	<entry>
 		<title>Just start a blog</title>
 		<link href="https://static.quest/posts/resources/"/>
-		<updated>2025-04-14T00:56:43Z</updated>
+		<updated>2025-05-08T01:21:47Z</updated>
 		<id>https://static.quest/posts/resources/</id>
 		<content type="html">&lt;p&gt;Finding a good community to help you along in your web journey is a powerful thing. There are places to improve design, backend work, writing, and more. Here are a few great resources to help in some of those ideas.&lt;/p&gt;
 &lt;ul&gt;
