@@ -16,10 +16,10 @@ Add your information in the JSON data and it will be rendered to the table on th
 
 ```yaml
 ---
-name: "Your Name",
-host: "yourwebsite.com/",
-feed: "yourwebsite.com/feed/",
-ssg: "static site generator",
+name: Your Name
+host: yourwebsite.com/
+feed: yourwebsite.com/feed/
+ssg: static site generator
 type: "blog, personal, art, technology, etc"
 ---
 ```
