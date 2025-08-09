@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Sun, 03 Aug 2025 02:15:39 GMT</dateCreated>
+        <dateCreated>Sat, 09 Aug 2025 12:55:26 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -83,6 +83,9 @@
             
         
             <outline text="zkbro" title="zkbro" type="rss" xmlUrl="html-chunder.neocities.org/atom.xml" htmlUrl="html-chunder.neocities.org"/>
+            
+        
+            <outline text="Daniel" title="Daniel" type="rss" xmlUrl="www.zurdala.es/blog/index.xml" htmlUrl="www.zurdala.es/"/>
             
         
     </body>
