@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Mon, 29 Sep 2025 22:00:18 GMT</dateCreated>
+        <dateCreated>Mon, 29 Sep 2025 22:56:44 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -55,6 +55,9 @@
             
         
             <outline text="OrbitalMartian" title="OrbitalMartian" type="rss" xmlUrl="orbitalmartian.codeberg.page/feed.xml" htmlUrl="orbitalmartian.codeberg.page"/>
+            
+        
+            <outline text="Owlcode" title="Owlcode" type="rss" xmlUrl="www.owlcode.eu/index.xml" htmlUrl="www.owlcode.eu"/>
             
         
             <outline text="Joshua Liu" title="Joshua Liu" type="rss" xmlUrl="pilledtexts.com/index.xml" htmlUrl="pilledtexts.com"/>
