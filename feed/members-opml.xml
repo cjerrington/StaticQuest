@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Mon, 29 Sep 2025 23:34:28 GMT</dateCreated>
+        <dateCreated>Sat, 04 Oct 2025 03:42:30 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -53,6 +53,7 @@
         
             <outline text="Lazybear" title="Lazybear" type="rss" xmlUrl="lazybea.rs/index.xml" htmlUrl="lazybea.rs"/>
             
+        
         
             <outline text="D. Moonfire" title="D. Moonfire" type="rss" xmlUrl="d.moonfire.us/atom.xml" htmlUrl="d.moonfire.us"/>
             
