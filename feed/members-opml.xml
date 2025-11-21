@@ -2,13 +2,16 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Sat, 04 Oct 2025 03:47:06 GMT</dateCreated>
+        <dateCreated>Fri, 21 Nov 2025 18:43:33 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
             
         
             <outline text="Adamsdesk" title="Adamsdesk" type="rss" xmlUrl="www.adamsdesk.com/feed/blog.xml" htmlUrl="www.adamsdesk.com"/>
+            
+        
+            <outline text="Alec Sargent" title="Alec Sargent" type="rss" xmlUrl="alecsargent.codeberg.page/posts/rss.xml" htmlUrl="alecsargent.codeberg.page"/>
             
         
             <outline text="Alex Zee" title="Alex Zee" type="rss" xmlUrl="alexzeecomedy.com/rss.xml" htmlUrl="alexzeecomedy.com"/>
@@ -75,11 +78,15 @@
             <outline text="R.L. Dane" title="R.L. Dane" type="rss" xmlUrl="rldane.space/feeds/all.atom.xml" htmlUrl="rldane.space"/>
             
         
+            <outline text="" title="" type="rss" xmlUrl="sampsa.fun/sampsanblogi.xml" htmlUrl="sampsa.fun"/>
+            
+        
             <outline text="Robert Lützner" title="Robert Lützner" type="rss" xmlUrl="schafe-sind-bessere-rasenmaeher.de/index.xml" htmlUrl="schafe-sind-bessere-rasenmaeher.de"/>
             
         
             <outline text="Shellsharks" title="Shellsharks" type="rss" xmlUrl="https://shellsharks.com/feeds/all-feed.xml" htmlUrl="shellsharks.com"/>
             
+        
         
             <outline text="starbreaker.org" title="starbreaker.org" type="rss" xmlUrl="starbreaker.org/follow/everything.xml" htmlUrl="starbreaker.org"/>
             
