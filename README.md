@@ -87,10 +87,10 @@ Add your website content to `/src/members` folder with your information:
 
 ```yaml
 ---
-name: "Your Name",
-host: "yourwebsite.com/",
-feed: "yourwebsite.com/feed/",
-ssg: "static site generator",
+name: "Your Name"
+host: "yourwebsite.com/"
+feed: "yourwebsite.com/feed/"
+ssg: "static site generator"
 type: "blog, personal, art, technology, etc"
 ---
 ```
