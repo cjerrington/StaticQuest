@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Fri, 21 Nov 2025 18:43:33 GMT</dateCreated>
+        <dateCreated>Mon, 24 Nov 2025 21:46:54 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -24,6 +24,9 @@
             
         
             <outline text="Bobby Hiltz" title="Bobby Hiltz" type="rss" xmlUrl="bobbyhiltz.com/rss.xml" htmlUrl="bobbyhiltz.com"/>
+            
+        
+            <outline text="Naty S" title="Naty S" type="rss" xmlUrl="burgeonlab.com/feed.xml" htmlUrl="burgeonlab.com"/>
             
         
             <outline text="Clayton Errington" title="Clayton Errington" type="rss" xmlUrl="claytonerrington.com/feed/" htmlUrl="claytonerrington.com"/>
