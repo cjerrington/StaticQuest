@@ -12,7 +12,7 @@ The only requirement is to have a static site! This is the honor system and we'r
 
 Just clone/fork the [repository](https://github.com/cjerrington/StaticQuest), add your website file to `src/members/` folder with your information and make a pull request, and we'll get it added. You can also open a [Join Static.Quest issue](https://github.com/cjerrington/StaticQuest/issues/new/choose), and it can get added by the team.
 
-Add your information in the JSON data and it will be rendered to the table on the [Members](/members) page.
+Add your information in the YAML data and it will be rendered to the table on the [Members](/members) page.
 
 ```yaml
 ---
