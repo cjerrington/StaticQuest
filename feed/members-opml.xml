@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Thu, 18 Dec 2025 22:47:30 GMT</dateCreated>
+        <dateCreated>Mon, 29 Dec 2025 14:34:59 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -23,7 +23,7 @@
             <outline text="Benjamin Hollon" title="Benjamin Hollon" type="rss" xmlUrl="benjaminhollon.com/musings/feed/" htmlUrl="benjaminhollon.com"/>
             
         
-            <outline text="Bill Glover" title="Bill Glover" type="rss" xmlUrl="https://billglover.me/index.xml" htmlUrl="billglover.me/"/>
+            <outline text="Bill Glover" title="Bill Glover" type="rss" xmlUrl="billglover.me/index.xml" htmlUrl="billglover.me"/>
             
         
             <outline text="Bobby Hiltz" title="Bobby Hiltz" type="rss" xmlUrl="bobbyhiltz.com/rss.xml" htmlUrl="bobbyhiltz.com"/>
