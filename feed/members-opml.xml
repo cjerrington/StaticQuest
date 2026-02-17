@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Tue, 17 Feb 2026 16:34:31 GMT</dateCreated>
+        <dateCreated>Tue, 17 Feb 2026 16:54:24 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -18,6 +18,9 @@
             
         
             <outline text="Aman Mittal" title="Aman Mittal" type="rss" xmlUrl="amanhimself.dev/rss.xml" htmlUrl="amanhimself.dev/"/>
+            
+        
+            <outline text="arts &amp; ego" title="arts &amp; ego" type="rss" xmlUrl="www.dylanharris.org/feed-me.rss" htmlUrl="www.dylanharris.org"/>
             
         
             <outline text="Benjamin Hollon" title="Benjamin Hollon" type="rss" xmlUrl="benjaminhollon.com/musings/feed/" htmlUrl="benjaminhollon.com"/>
