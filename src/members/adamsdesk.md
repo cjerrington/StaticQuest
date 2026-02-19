@@ -2,6 +2,6 @@
 name: Adamsdesk
 host: www.adamsdesk.com
 feed: www.adamsdesk.com/feed/blog.xml
-ssg: jekyll
+ssg: Jekyll
 type: 'blog, tech'
 ---

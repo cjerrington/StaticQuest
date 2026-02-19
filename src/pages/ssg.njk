@@ -1,0 +1,34 @@
+---
+title: Static Site Generators
+description: Listing of the Static Site Generators the members are using
+eleventyNavigation:
+  key: SSG
+  order: 6
+---
+
+
+{% set ssgCounts = collections.members | groupBySsg %}
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Static Site Generator</th>
+      <th>Members</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ssg, count in ssgCounts | dictsort %}
+      {% set link = ssgLinks[ssg] %}
+      <tr>
+      {% if link %}
+        <td>
+          <a href="{{ link }}" target="_blank" rel="noopener">
+            {{ ssg | capitalize }}
+          </a>
+        </td>
+        <td>{{ count }}</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

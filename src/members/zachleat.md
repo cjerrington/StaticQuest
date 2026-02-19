@@ -2,6 +2,6 @@
 name: Zach Leatherman
 host: www.zachleat.com
 feed: www.zachleat.com/web/feed/
-ssg: eleventy
+ssg: Eleventy
 type: 'blog, personal'
 ---

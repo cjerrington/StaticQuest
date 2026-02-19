@@ -2,6 +2,6 @@
 name: Konstantin Tutsch
 host: konstantintutsch.com
 feed: konstantintutsch.com/feed.xml
-ssg: eleventy
+ssg: Eleventy
 type: 'blog, personal'
 ---

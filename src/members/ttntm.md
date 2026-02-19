@@ -2,6 +2,6 @@
 name: Tom's Homepage
 host: ttntm.me
 feed: ttntm.me/everything.xml
-ssg: eleventy
+ssg: Eleventy
 type: 'personal, tech'
 ---

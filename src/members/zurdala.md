@@ -2,6 +2,6 @@
 name: Daniel
 host: www.zurdala.es/
 feed: www.zurdala.es/blog/index.xml
-ssg: hugo
+ssg: Hugo
 type: "blog, personal, spanish, english"
 ---

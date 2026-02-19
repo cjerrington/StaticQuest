@@ -2,6 +2,6 @@
 name: Sudip
 host: blackpiratex.com/
 feed: blog.blackpiratex.com/index.xml
-ssg: hugo
+ssg: Hugo
 type: "personal, technology"
 ---

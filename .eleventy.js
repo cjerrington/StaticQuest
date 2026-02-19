@@ -42,9 +42,32 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter("unique", function(collection) {
+    const values = collection.map(item =>
+    item.data.ssg.trim().toLowerCase()
+    );
+    return [...new Set(values)];
+  });
+
   // Return the smallest number argument
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
+  });
+
+  eleventyConfig.addFilter("groupBySsg", function(collection) {
+    const counts = {};
+
+    collection.forEach(item => {
+      const key = item.data.ssg.trim().toLowerCase();
+
+      if (!counts[key]) {
+        counts[key] = 0;
+      }
+
+      counts[key]++;
+    });
+
+    return counts;
   });
 
   function filterTagList(tags) {

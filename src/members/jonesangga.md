@@ -1,6 +1,6 @@
 ---
 name: jonesangga
 host: jonesangga.codeberg.page
-ssg: html
+ssg: HTML
 type: 'blog, personal, demo/visual'
 ---

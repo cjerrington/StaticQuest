@@ -2,6 +2,6 @@
 name: Joris van Dijk
 host: jorisvandijk.com
 feed: feed.jorisvandijk.com
-ssg: hugo
+ssg: Hugo
 type: "blog, personal, technology, Linux, homelabs"
 ---
