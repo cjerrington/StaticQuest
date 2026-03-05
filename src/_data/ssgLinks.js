@@ -11,6 +11,7 @@ module.exports = {
   zola: "https://www.getzola.org/",
   cobalt: "https://cobalt-org.github.io/",
   quarto: "https://quarto.org/",
+  makko: "https://makko.starlightnet.work/",
   blot: "https://blot.im/",
   "mfgames.nitride": "https://mfgames.com/mfgames-cil/docs/nitride/"
 };
