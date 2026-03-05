@@ -5,7 +5,7 @@ description: Thank you
 
 A simple thank you is in order.
 
-Designed with [Simple.css](https://simplecss.org>Simple.css) which was created by [Kev Quirk](https://kevq.uk) and is licensed under the MIT license.
+Designed with [Simple.css](https://simplecss.org) which was created by [Kev Quirk](https://kevq.uk) and is licensed under the MIT license.
 
 Starter template by [Luke Harris](https://www.lkhrs.com).
 
