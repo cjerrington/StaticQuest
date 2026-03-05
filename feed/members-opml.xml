@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Thu, 05 Mar 2026 14:41:18 GMT</dateCreated>
+        <dateCreated>Thu, 05 Mar 2026 14:46:33 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -125,6 +125,9 @@
             
         
             <outline text="Robert Lützner" title="Robert Lützner" type="rss" xmlUrl="schafe-sind-bessere-rasenmaeher.de/index.xml" htmlUrl="schafe-sind-bessere-rasenmaeher.de"/>
+            
+        
+            <outline text="Sebastián Monía" title="Sebastián Monía" type="rss" xmlUrl="site.sebasmonia.com/feed.xml" htmlUrl="site.sebasmonia.com"/>
             
         
             <outline text="Shellsharks" title="Shellsharks" type="rss" xmlUrl="https://shellsharks.com/feeds/all-feed.xml" htmlUrl="shellsharks.com"/>

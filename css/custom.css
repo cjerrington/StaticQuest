@@ -26,3 +26,8 @@ a[href^='http']:not([href*='localhost:8080']):not(
   white-space: nowrap;
   text-indent: 1em; /* the width of the icon */
 }
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+}
