@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Tue, 10 Mar 2026 14:01:42 GMT</dateCreated>
+        <dateCreated>Wed, 18 Mar 2026 02:18:39 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -49,6 +49,7 @@
         
             <outline text="Naty S" title="Naty S" type="rss" xmlUrl="burgeonlab.com/feed.xml" htmlUrl="burgeonlab.com"/>
             
+        
         
             <outline text="Clayton Errington" title="Clayton Errington" type="rss" xmlUrl="claytonerrington.com/feed/" htmlUrl="claytonerrington.com"/>
             
@@ -149,6 +150,9 @@
             <outline text="stoerdebegga" title="stoerdebegga" type="rss" xmlUrl="blog.stoerdebegga.org/rss.xml" htmlUrl="blog.stoerdebegga.org"/>
             
         
+        
+            <outline text="The Tech Absurdist" title="The Tech Absurdist" type="rss" xmlUrl="tech-absurdist.neocities.org/rss.xml" htmlUrl="tech-absurdist.neocities.org"/>
+            
         
             <outline text="Thiago Perrotta" title="Thiago Perrotta" type="rss" xmlUrl="perrotta.dev/index.xml" htmlUrl="perrotta.dev"/>
             
