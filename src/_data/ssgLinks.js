@@ -13,5 +13,6 @@ module.exports = {
   quarto: "https://quarto.org/",
   makko: "https://makko.starlightnet.work/",
   blot: "https://blot.im/",
-  "mfgames.nitride": "https://mfgames.com/mfgames-cil/docs/nitride/"
+  "mfgames.nitride": "https://mfgames.com/mfgames-cil/docs/nitride/",
+  marked : "https://marked.js.org/"
 };
