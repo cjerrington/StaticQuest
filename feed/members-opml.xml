@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Wed, 01 Apr 2026 11:35:56 GMT</dateCreated>
+        <dateCreated>Wed, 01 Apr 2026 14:12:41 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -62,6 +62,9 @@
             
         
             <outline text="ilyess" title="ilyess" type="rss" xmlUrl="ilyess.cc/posts/index.xml" htmlUrl="ilyess.cc"/>
+            
+        
+            <outline text="Jarema" title="Jarema" type="rss" xmlUrl="jarema.me/rss.xml" htmlUrl="jarema.me"/>
             
         
             <outline text="Jb Carreon" title="Jb Carreon" type="rss" xmlUrl="jbc.lol/feed.xml" htmlUrl="jbc.lol"/>
