@@ -13,13 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        uses: cjerrington/actions-eleventy@master
+        uses: cjerrington/actions-eleventy@v2
         with:
-          cname: static.quest
           install_dependencies: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           publish_dir: _site 
           publish_branch: gh-pages
+          cname: static.quest
           github_token: ${{ secrets.DEPLOY_TOKEN }}
