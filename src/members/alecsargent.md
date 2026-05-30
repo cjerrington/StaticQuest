@@ -2,6 +2,6 @@
 name: "Alec Sargent"
 host: "alecsargent.codeberg.page"
 feed: "alecsargent.codeberg.page/posts/rss.xml"
-ssg: "Hugo"
+ssg: "Zine"
 type: "blog, personal, technology, hobbies"
 ---
