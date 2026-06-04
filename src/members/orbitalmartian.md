@@ -1,7 +1,7 @@
 ---
 name: OrbitalMartian
-host: orbitalmartian.codeberg.page
-feed: orbitalmartian.codeberg.page/feed.xml
-ssg: Eleventy
+host: orbitalmartian.polymaths.page
+feed: orbitalmartian.polymaths.page/feed.xml
+ssg: Jekyll
 type: 'blog, personal'
 ---
