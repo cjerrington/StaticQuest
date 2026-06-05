@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Fri, 05 Jun 2026 13:40:30 GMT</dateCreated>
+        <dateCreated>Fri, 05 Jun 2026 15:57:59 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -57,7 +57,6 @@
             <outline text="Duanin2" title="Duanin2" type="rss" xmlUrl="duanin2.top/feed.rss" htmlUrl="duanin2.top"/>
             
         
-        
             <outline text="Helen Chong" title="Helen Chong" type="rss" xmlUrl="helenchong.dev/blog/feed.xml" htmlUrl="helenchong.dev"/>
             
         
@@ -97,9 +96,6 @@
             
         
             <outline text="Luke Davis" title="Luke Davis" type="rss" xmlUrl="lukealexdavis.co.uk/omnifeed.xml" htmlUrl="lukealexdavis.co.uk/"/>
-            
-        
-            <outline text="Michael Perry" title="Michael Perry" type="rss" xmlUrl="mikesthoughts.blog/feed.rss" htmlUrl="mikesthoughts.blog"/>
             
         
             <outline text="D. Moonfire" title="D. Moonfire" type="rss" xmlUrl="d.moonfire.us/atom.xml" htmlUrl="d.moonfire.us"/>
@@ -155,9 +151,6 @@
             
         
         
-            <outline text="The Tech Absurdist" title="The Tech Absurdist" type="rss" xmlUrl="tech-absurdist.neocities.org/rss.xml" htmlUrl="tech-absurdist.neocities.org"/>
-            
-        
             <outline text="Thiago Perrotta" title="Thiago Perrotta" type="rss" xmlUrl="perrotta.dev/index.xml" htmlUrl="perrotta.dev"/>
             
         
@@ -174,9 +167,6 @@
             
         
             <outline text="Zach Leatherman" title="Zach Leatherman" type="rss" xmlUrl="www.zachleat.com/web/feed/" htmlUrl="www.zachleat.com"/>
-            
-        
-            <outline text="zkbro" title="zkbro" type="rss" xmlUrl="html-chunder.neocities.org/atom.xml" htmlUrl="html-chunder.neocities.org"/>
             
         
             <outline text="Daniel" title="Daniel" type="rss" xmlUrl="www.zurdala.es/blog/index.xml" htmlUrl="www.zurdala.es/"/>
