@@ -2,10 +2,13 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Fri, 12 Jun 2026 22:09:18 GMT</dateCreated>
+        <dateCreated>Wed, 17 Jun 2026 15:52:20 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
+            
+        
+            <outline text="HisVirusness" title="HisVirusness" type="rss" xmlUrl="hisvirusness.com/feed/" htmlUrl="hisvirusness.com"/>
             
         
             <outline text="Adamsdesk" title="Adamsdesk" type="rss" xmlUrl="www.adamsdesk.com/feed/blog.xml" htmlUrl="www.adamsdesk.com"/>
