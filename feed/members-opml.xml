@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Wed, 05 Aug 2026 02:25:50 GMT</dateCreated>
+        <dateCreated>Thu, 06 Aug 2026 01:59:02 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -102,6 +102,9 @@
             
         
             <outline text="D. Moonfire" title="D. Moonfire" type="rss" xmlUrl="d.moonfire.us/atom.xml" htmlUrl="d.moonfire.us"/>
+            
+        
+            <outline text="Nelson Figueroa" title="Nelson Figueroa" type="rss" xmlUrl="nelson.cloud/index.xml" htmlUrl="nelson.cloud"/>
             
         
             <outline text="NTHP" title="NTHP" type="rss" xmlUrl="nthp.me/feed.xml" htmlUrl="nthp.me"/>
