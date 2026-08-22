@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Sat, 22 Aug 2026 20:40:58 GMT</dateCreated>
+        <dateCreated>Sat, 22 Aug 2026 20:45:59 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -11,7 +11,7 @@
             <outline text="HisVirusness" title="HisVirusness" type="rss" xmlUrl="hisvirusness.com/feed/" htmlUrl="hisvirusness.com"/>
             
         
-            <outline text="pina" title="pina" type="rss" xmlUrl="kovasignal.com/index.xml/" htmlUrl="kovasignal.com/"/>
+            <outline text="pina" title="pina" type="rss" xmlUrl="kovasignal.com/index.xml" htmlUrl="kovasignal.com"/>
             
         
             <outline text="Adamsdesk" title="Adamsdesk" type="rss" xmlUrl="www.adamsdesk.com/feed/blog.xml" htmlUrl="www.adamsdesk.com"/>
@@ -23,10 +23,10 @@
             <outline text="Alex Zee" title="Alex Zee" type="rss" xmlUrl="alexzeecomedy.com/rss.xml" htmlUrl="alexzeecomedy.com"/>
             
         
-            <outline text="Aman Mittal" title="Aman Mittal" type="rss" xmlUrl="amanhimself.dev/rss.xml" htmlUrl="amanhimself.dev/"/>
+            <outline text="Aman Mittal" title="Aman Mittal" type="rss" xmlUrl="amanhimself.dev/rss.xml" htmlUrl="amanhimself.dev"/>
             
         
-            <outline text="Arjun" title="Arjun" type="rss" xmlUrl="arjun9124.github.io/index.xml" htmlUrl="arjun9124.github.io/"/>
+            <outline text="Arjun" title="Arjun" type="rss" xmlUrl="arjun9124.github.io/index.xml" htmlUrl="arjun9124.github.io"/>
             
         
             <outline text="arts &amp; ego" title="arts &amp; ego" type="rss" xmlUrl="www.dylanharris.org/feed-me.rss" htmlUrl="www.dylanharris.org"/>
@@ -41,7 +41,7 @@
             <outline text="Bill Glover" title="Bill Glover" type="rss" xmlUrl="billglover.me/index.xml" htmlUrl="billglover.me"/>
             
         
-            <outline text="Sudip" title="Sudip" type="rss" xmlUrl="blog.blackpiratex.com/index.xml" htmlUrl="blackpiratex.com/"/>
+            <outline text="Sudip" title="Sudip" type="rss" xmlUrl="blog.blackpiratex.com/index.xml" htmlUrl="blackpiratex.com"/>
             
         
             <outline text="Bobby Hiltz" title="Bobby Hiltz" type="rss" xmlUrl="bobbyhiltz.com/rss.xml" htmlUrl="bobbyhiltz.com"/>
@@ -85,7 +85,7 @@
             
         
         
-            <outline text="Jorge Sanz" title="Jorge Sanz" type="rss" xmlUrl="jorgesanz.net/index.xml" htmlUrl="jorgesanz.net/"/>
+            <outline text="Jorge Sanz" title="Jorge Sanz" type="rss" xmlUrl="jorgesanz.net/index.xml" htmlUrl="jorgesanz.net"/>
             
         
             <outline text="Joris van Dijk" title="Joris van Dijk" type="rss" xmlUrl="feed.jorisvandijk.com" htmlUrl="jorisvandijk.com"/>
@@ -104,7 +104,7 @@
             <outline text="ldstephens" title="ldstephens" type="rss" xmlUrl="ldstephens.net/feed/feed.xml" htmlUrl="ldstephens.net"/>
             
         
-            <outline text="Luke Davis" title="Luke Davis" type="rss" xmlUrl="lukealexdavis.co.uk/omnifeed.xml" htmlUrl="lukealexdavis.co.uk/"/>
+            <outline text="Luke Davis" title="Luke Davis" type="rss" xmlUrl="lukealexdavis.co.uk/omnifeed.xml" htmlUrl="lukealexdavis.co.uk"/>
             
         
             <outline text="D. Moonfire" title="D. Moonfire" type="rss" xmlUrl="d.moonfire.us/atom.xml" htmlUrl="d.moonfire.us"/>
@@ -175,13 +175,13 @@
             <outline text="Verbose Guacamole" title="Verbose Guacamole" type="rss" xmlUrl="verboseguacamole.com/feed/" htmlUrl="verboseguacamole.com"/>
             
         
-            <outline text="Kelly Sharadin" title="Kelly Sharadin" type="rss" xmlUrl="xstaticprocess.dev/feed/rss.xml" htmlUrl="xstaticprocess.dev/"/>
+            <outline text="Kelly Sharadin" title="Kelly Sharadin" type="rss" xmlUrl="xstaticprocess.dev/feed/rss.xml" htmlUrl="xstaticprocess.dev"/>
             
         
             <outline text="Zach Leatherman" title="Zach Leatherman" type="rss" xmlUrl="www.zachleat.com/web/feed/" htmlUrl="www.zachleat.com"/>
             
         
-            <outline text="Daniel" title="Daniel" type="rss" xmlUrl="www.zurdala.es/blog/index.xml" htmlUrl="www.zurdala.es/"/>
+            <outline text="Daniel" title="Daniel" type="rss" xmlUrl="www.zurdala.es/blog/index.xml" htmlUrl="www.zurdala.es"/>
             
         
     </body>
