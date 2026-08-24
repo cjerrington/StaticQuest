@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <!-- if redirect takes too long, redirect to static.quest home page. -->
     <meta http-equiv="refresh" content="10; url=https://static.quest/">
-    <script type="module" src="/assets/random.js"></script>
   </head>
 
   <body>
-    <noscript>You need to enable JavaScript to make it to the next destination in the quest. If not redirected, please go to <a href="https://static.quest">Static.Quest</a></noscript>
+    <noscript>You need to enable JavaScript for a random destination in the quest. If not redirected, please go to <a href="https://static.quest">Static.Quest</a></noscript>
     <!-- redirecting... if not redirected in 10 seconds ensure JavaScript is enabled, and page will redirect home. -->
+    <script>
+      const hosts = ["82mhz.net","alecsargent.codeberg.page","alexzeecomedy.com","amanhimself.dev","arjun9124.github.io","austinhuang.me","benjaminhollon.com","billglover.me","blackpiratex.com","bobbyhiltz.com","bobmonsour.com","brennan.day","burgeonlab.com","cayzle.com","claytonerrington.com","d.moonfire.us","duanin2.top","helenchong.dev","hisvirusness.com","ilyess.cc","jarema.me","jbc.lol","jelloeater.me","joelchrono.xyz","jonesangga.codeberg.page","jorgesanz.net","jorisvandijk.com","kd3cpy.github.io","kollitsch.dev","konstantintutsch.com","kovasignal.com","lazybea.rs","ldstephens.net","lukealexdavis.co.uk","moddedbear.com","nelson.cloud","nthp.me","orbitalmartian.polymaths.page","perrotta.dev","pilledtexts.com","rishikeshs.com","rldane.space","rohitfarmer.com","sampsa.fun","saneef.com","schafe-sind-bessere-rasenmaeher.de","shellsharks.com","site.sebasmonia.com","smkpdl58.top","starbreaker.org","static.quest","stoerdebegga.org","sunarch.dev","tombrandis.uk","ttntm.me","verboseguacamole.com","www.adamsdesk.com","www.dylanharris.org","www.owlcode.eu","www.stevefenton.co.uk","www.zachleat.com","www.zurdala.es","xstaticprocess.dev"];
+      window.location.href = "https://" + hosts[Math.floor(Math.random() * hosts.length)];
+    </script>
   </body>
 </html>

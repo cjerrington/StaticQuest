@@ -3,15 +3,6 @@
     "host": "82mhz.net"
   },
   {
-    "host": "hisvirusness.com"
-  },
-  {
-    "host": "kovasignal.com"
-  },
-  {
-    "host": "www.adamsdesk.com"
-  },
-  {
     "host": "alecsargent.codeberg.page"
   },
   {
@@ -22,9 +13,6 @@
   },
   {
     "host": "arjun9124.github.io"
-  },
-  {
-    "host": "www.dylanharris.org"
   },
   {
     "host": "austinhuang.me"
@@ -57,10 +45,16 @@
     "host": "claytonerrington.com"
   },
   {
+    "host": "d.moonfire.us"
+  },
+  {
     "host": "duanin2.top"
   },
   {
     "host": "helenchong.dev"
+  },
+  {
+    "host": "hisvirusness.com"
   },
   {
     "host": "ilyess.cc"
@@ -73,9 +67,6 @@
   },
   {
     "host": "jelloeater.me"
-  },
-  {
-    "host": "moddedbear.com"
   },
   {
     "host": "joelchrono.xyz"
@@ -99,6 +90,9 @@
     "host": "konstantintutsch.com"
   },
   {
+    "host": "kovasignal.com"
+  },
+  {
     "host": "lazybea.rs"
   },
   {
@@ -108,7 +102,7 @@
     "host": "lukealexdavis.co.uk"
   },
   {
-    "host": "d.moonfire.us"
+    "host": "moddedbear.com"
   },
   {
     "host": "nelson.cloud"
@@ -120,7 +114,7 @@
     "host": "orbitalmartian.polymaths.page"
   },
   {
-    "host": "www.owlcode.eu"
+    "host": "perrotta.dev"
   },
   {
     "host": "pilledtexts.com"
@@ -144,10 +138,10 @@
     "host": "schafe-sind-bessere-rasenmaeher.de"
   },
   {
-    "host": "site.sebasmonia.com"
+    "host": "shellsharks.com"
   },
   {
-    "host": "shellsharks.com"
+    "host": "site.sebasmonia.com"
   },
   {
     "host": "smkpdl58.top"
@@ -159,16 +153,10 @@
     "host": "static.quest"
   },
   {
-    "host": "www.stevefenton.co.uk"
-  },
-  {
     "host": "stoerdebegga.org"
   },
   {
     "host": "sunarch.dev"
-  },
-  {
-    "host": "perrotta.dev"
   },
   {
     "host": "tombrandis.uk"
@@ -180,12 +168,24 @@
     "host": "verboseguacamole.com"
   },
   {
-    "host": "xstaticprocess.dev"
+    "host": "www.adamsdesk.com"
+  },
+  {
+    "host": "www.dylanharris.org"
+  },
+  {
+    "host": "www.owlcode.eu"
+  },
+  {
+    "host": "www.stevefenton.co.uk"
   },
   {
     "host": "www.zachleat.com"
   },
   {
     "host": "www.zurdala.es"
+  },
+  {
+    "host": "xstaticprocess.dev"
   }
 ]

@@ -44,7 +44,7 @@
 <p>Add your information in the YAML data and it will be rendered to the table on the <a href="/members">Members</a> page.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
 <span class="token key atrule">name</span><span class="token punctuation">:</span> Your Name
-<span class="token key atrule">host</span><span class="token punctuation">:</span> yourwebsite.com/
+<span class="token key atrule">host</span><span class="token punctuation">:</span> yourwebsite.com
 <span class="token key atrule">feed</span><span class="token punctuation">:</span> yourwebsite.com/feed/
 <span class="token key atrule">ssg</span><span class="token punctuation">:</span> static site generator
 <span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"blog, personal, art, technology, etc"</span>
@@ -52,25 +52,26 @@
 <p>You can add what you'd like in the <code>yaml</code>, but the name and website are kinda required. Adding an RSS feed is for those who like to subscribe and its readily available.</p>
 <p>The <code>ssg</code> is for the Static Site Generator used, and would be neat as the web ring grows to see the variety of methods used to generate your awesome website.</p>
 <h2 id="add-static-quest-to-your-site" tabindex="-1">Add Static.Quest to your site <a class="direct-link" href="#add-static-quest-to-your-site" aria-hidden="true">#</a></h2>
-<p>As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to update the <code>host</code> to the <code>host</code> you have in your <code>name.md</code> file.</p>
+<p>As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to replace <code>static.quest</code> with the <code>host</code> you have in your <code>name.md</code> file. These links are generated when Static.Quest is built, so they always point to the current next or previous member, even as the ring grows.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
   A member of the <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Static.Quest<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> web ring! 
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/previous/?host=static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token entity" title="&#8592;">&amp;#8592;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/previous/static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token entity" title="&#8592;">&amp;#8592;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/members<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>View Members<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/next/?host=static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token entity" title="&#8594;">&amp;#8594;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/next/static.quest<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token entity" title="&#8594;">&amp;#8594;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/random<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Feeling lucky?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
 <div style="text-align: center;">
 <p>A member of the <a href="https://static.quest">Static.Quest</a> web ring!
 <br />
-<a href="/previous/?host=static.quest">←</a>
+<a href="https://static.quest/previous/static.quest">←</a>
 <a href="/members">View Members</a>
-<a href="/next/?host=static.quest">→</a>
+<a href="https://static.quest/next/static.quest">→</a>
 <br />
 <a href="https://static.quest/random">Feeling lucky?</a></p>
 </div>
+<p>The older style links using a query string, such as <code>/next/?host=static.quest</code>, still work if you already have them on your site.</p>
 <h2 id="membership-rules" tabindex="-1">Membership rules <a class="direct-link" href="#membership-rules" aria-hidden="true">#</a></h2>
 <h3 id="website-content" tabindex="-1">Website content <a class="direct-link" href="#website-content" aria-hidden="true">#</a></h3>
 <p>As it's nigh impossible for me, or anyone else, to decern the validity of one's claim to Static.Quest status, almost any site should get accepted, barring the following:</p>

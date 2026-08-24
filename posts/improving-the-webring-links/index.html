@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improving the webring links, one build at a time</title>
+  <meta name="description" content="How we replaced JavaScript redirects with pages generated at build time for the Static.Quest webring">
+  <meta name="generator" content="Eleventy (Build Awesome) v4.0.0">
+  <link rel="me" href="https://mstdn.social/@cjerrington" />
+
+  <link rel="stylesheet" href="/css/simple.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+  <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Static.Quest">
+  <link rel="alternate" href="/feed/feed.json" type="application/json" title="Static.Quest">
+
+  <script defer src="https://analytics.claytonerrington.com/script.js" data-website-id="6603df20-de18-4911-b9c4-f80942d2a374"></script>
+  
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/members/">Members</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/archive/">Posts</a></li>
+        <li><a href="/join/">Join</a></li>
+        <li><a href="/ssg/">SSG</a></li>
+      </ul>
+    </nav>
+
+    <h1>Improving the webring links, one build at a time</h1>
+    <p>How we replaced JavaScript redirects with pages generated at build time for the Static.Quest webring</p>
+  </header>
+
+  <main>
+    
+<!-- p>Posted on: <time datetime="2026-08-22">22 Aug 2026</time></p-->
+
+<p>If you have ever clicked the little ← and → arrows on a member's site, you have used the plumbing that ties <a href="https://static.quest">Static.Quest</a> together. Those links are how a web ring works: every site points to the next and previous member, and visitors can walk the whole circle without ever visiting the hub. This post is a look at how those links worked until recently, what was wrong with them, and how we made them better while staying 100% static.</p>
+<h2 id="how-it-used-to-work" tabindex="-1">How it used to work <a class="direct-link" href="#how-it-used-to-work" aria-hidden="true">#</a></h2>
+<p>The original approach leaned on the browser. Members embedded links like this:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://static.quest/next/?host=yourwebsite.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token entity" title="&#8594;">&amp;#8594;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>When someone clicked that link, they landed on a small page on Static.Quest whose only job was to run some JavaScript:</p>
+<ol>
+<li>Read the <code>host</code> value out of the query string</li>
+<li><code>fetch()</code> a JSON file listing all the members</li>
+<li>Find the current host in the array</li>
+<li>Set <code>window.location</code> to the neighbor's URL</li>
+</ol>
+<p>It worked, and honestly it worked fine for years. But it had a few rough edges worth fixing:</p>
+<ul>
+<li><strong>JavaScript required.</strong> No JS, no redirect. You got a polite <code>&lt;noscript&gt;</code> message instead.</li>
+<li><strong>An extra round trip.</strong> Every hop waited on fetching and parsing <code>members.json</code> before anything happened.</li>
+<li><strong>Silent failure modes.</strong> Visit <code>/next/</code> without a <code>?host=</code> parameter and nothing happens at all.</li>
+<li><strong>The ring order wasn't stable.</strong> The JSON array was generated in whatever order Eleventy happened to collect the files, which is not guaranteed to be identical between machines or CI checkouts.</li>
+</ul>
+<h2 id="the-new-way-generate-the-redirects-at-build-time" tabindex="-1">The new way: generate the redirects at build time <a class="direct-link" href="#the-new-way-generate-the-redirects-at-build-time" aria-hidden="true">#</a></h2>
+<p>The key realization is that Eleventy already knows everything needed at build time. It has the full member list, so it knows exactly who comes before and after you in the ring. So why involve the browser at all?</p>
+<p>Instead of one generic redirect page, we now generate <strong>one tiny HTML page per member per direction</strong> during the build:</p>
+<ul>
+<li><code>/next/static.quest/</code></li>
+<li><code>/previous/static.quest/</code></li>
+</ul>
+<p>Each page is just a meta refresh pointing at the correct neighbor:</p>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>refresh<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0; url=https://nextsiteplaceholder.com/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Walking the Static.Quest web ring to
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://nextsiteplaceholder.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>https://nextsiteplaceholder.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token entity named-entity" title="&hellip;">&amp;hellip;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Members embed a link to their own page (<code>/next/static.quest/</code>) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone's pages, and all the neighbors quietly shift over without any member touching their markup.</p>
+<h2 id="how-it-is-built" tabindex="-1">How it is built <a class="direct-link" href="#how-it-is-built" aria-hidden="true">#</a></h2>
+<p>Two pieces make this work in Eleventy.</p>
+<p>First, a deterministic ring order. Hosts are normalized (lowercased, trailing slashes stripped) and sorted alphabetically, then shared through filters so every consumer agrees on who is next and previous:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">normalizeHost</span><span class="token punctuation">(</span><span class="token parameter">host</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">String</span><span class="token punctuation">(</span>host <span class="token operator">||</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\/+$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+eleventyConfig<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">"orderedHosts"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">collection</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> collection
+    <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=></span> <span class="token function">normalizeHost</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>data<span class="token punctuation">.</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+eleventyConfig<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">"ringNeighbor"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">collection<span class="token punctuation">,</span> host<span class="token punctuation">,</span> offset</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> hosts <span class="token operator">=</span> collection
+    <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=></span> <span class="token function">normalizeHost</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>data<span class="token punctuation">.</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> index <span class="token operator">=</span> hosts<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token function">normalizeHost</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> hosts<span class="token punctuation">[</span><span class="token punctuation">(</span>index <span class="token operator">+</span> offset <span class="token operator">+</span> hosts<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">%</span> hosts<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>That modulo arithmetic is the whole wrap-around trick: the last site's &quot;next&quot; is the first site, and the first site's &quot;previous&quot; wraps back around to the end. A web ring should be a circle, after all.</p>
+<p>Second, a paginated template generates all the pages:</p>
+<pre class="language-html"><code class="language-html">---
+permalink: "/next/{{ member.data.host | hostSlug }}/"
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.members
+  size: 1
+  alias: member
+---
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>refresh<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0; url=https://{{ collections.members | ringNeighbor(member.data.host, 1) }}/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<p>Eleventy fans that out into 63 pages, one per member, in about a third of a second. There are 63 current members at time of writing.</p>
+<h2 id="nobody-gets-left-behind" tabindex="-1">Nobody gets left behind <a class="direct-link" href="#nobody-gets-left-behind" aria-hidden="true">#</a></h2>
+<p>Changing the widget format would normally mean asking every member to update their site. Instead, both formats work side by side:</p>
+<ul>
+<li>The old <code>/next/?host=yourwebsite.com</code> pages are untouched and keep doing their thing</li>
+<li>The new per-host pages live alongside them at <code>/next/&lt;host&gt;/</code></li>
+<li>Both read from the same shared ordering, so &quot;next&quot; means the same neighbor no matter which style of link brought you there</li>
+</ul>
+<p>New members copying the snippet from the <a href="/pages/join/">join page</a> get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.</p>
+<p>While improving the overall process, the random link got a small tune-up too. It used to be the same story: load page, fetch JSON, pick a winner. Now the member list is baked right into the page at build time, so clicking &quot;Feeling lucky?&quot; needs zero network requests beyond the redirect itself.</p>
+<h2 id="why-this-matters" tabindex="-1">Why this matters <a class="direct-link" href="#why-this-matters" aria-hidden="true">#</a></h2>
+<p>Everything above stays true to what makes a static site a static site: no server-side logic, no edge functions, no databases. Just files on a static server. The &quot;dynamic&quot; behavior people usually reach for JavaScript to solve turned out to be a build-time problem wearing a runtime costume, and moving it into the build made the result faster, simpler, and friendlier to browsers that don't run scripts.</p>
+<p>So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the <a href="/pages/join/">joining instructions</a> and add yourself to the circle.</p>
+
+<hr>
+<p>Tagged with:</p>
+<ul>
+  <li><a href="/tags/webring/">webring</a></li>
+</ul>
+<p>More posts:</p>
+<ul><li>Previous: <a href="/posts/what-is-a-static-site/">What is a static website?</a></li>
+</ul>
+
+  </main>
+
+  <footer>
+    <p><a href="/members">View Members</a> | <a href="/join">Join the Quest</a> | <a href="/acknowledgements">Acknowledgements</a></p>
+    <p>Build with <a href="https://www.11ty.dev/">Eleventy</a> by <a href="https://claytonerrington.com">Clayton Errington</a></p>
+  </footer>
+
+</body>
+
+</html>
