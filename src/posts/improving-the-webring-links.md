@@ -1,7 +1,7 @@
 ---
 title: Improving the webring links, one build at a time
-description: How we replaced JavaScript redirects with pages generated at build time for the Static.Quest webring
-date: 2026-08-22
+description: How I replaced JavaScript redirects with pages generated at build time for the Static.Quest webring
+date: 2026-08-24
 tags:
   - webring
 ---
@@ -36,8 +36,8 @@ The key realization is that Eleventy already knows everything needed at build ti
 
 Instead of one generic redirect page, we now generate **one tiny HTML page per member per direction** during the build:
 
-- `/next/static.quest/`
-- `/previous/static.quest/`
+- `/next/yourwebsite.com`
+- `/previous/yourwebsite.com`
 
 Each page is just a meta refresh pointing at the correct neighbor:
 
@@ -46,17 +46,17 @@ Each page is just a meta refresh pointing at the correct neighbor:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=https://nextsiteplaceholder.com/" />
+    <meta http-equiv="refresh" content="0; url=https://yourwebsite.com/" />
   </head>
 
   <body>
     <p>Walking the Static.Quest web ring to
-      <a href="https://nextsiteplaceholder.com">https://nextsiteplaceholder.com</a>&hellip;</p>
+      <a href="https://yourwebsite.com">https://yourwebsite.com</a>&hellip;</p>
   </body>
 </html>
 ```
 
-Members embed a link to their own page (`/next/static.quest/`) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone's pages, and all the neighbors quietly shift over without any member touching their markup.
+Members embed a link to their own page (`/next/yourwebsite.com`) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone's pages, and all the neighbors quietly shift over without any member touching their markup.
 
 ## How it is built
 
@@ -117,7 +117,7 @@ Changing the widget format would normally mean asking every member to update the
 - The new per-host pages live alongside them at `/next/<host>/`
 - Both read from the same shared ordering, so "next" means the same neighbor no matter which style of link brought you there
 
-New members copying the snippet from the [join page](/pages/join/) get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.
+New members copying the snippet from the [join page](/join/) get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.
 
 While improving the overall process, the random link got a small tune-up too. It used to be the same story: load page, fetch JSON, pick a winner. Now the member list is baked right into the page at build time, so clicking "Feeling lucky?" needs zero network requests beyond the redirect itself.
 
@@ -125,4 +125,4 @@ While improving the overall process, the random link got a small tune-up too. It
 
 Everything above stays true to what makes a static site a static site: no server-side logic, no edge functions, no databases. Just files on a static server. The "dynamic" behavior people usually reach for JavaScript to solve turned out to be a build-time problem wearing a runtime costume, and moving it into the build made the result faster, simpler, and friendlier to browsers that don't run scripts.
 
-So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the [joining instructions](/pages/join/) and add yourself to the circle.
+So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the [joining instructions](/join/) and add yourself to the circle.
