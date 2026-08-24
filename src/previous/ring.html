@@ -1,0 +1,18 @@
+---
+permalink: "/previous/{{ member.data.host | hostSlug }}/"
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.members
+  size: 1
+  alias: member
+---<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://{{ collections.members | ringNeighbor(member.data.host, -1) }}/" />
+  </head>
+
+  <body>
+    <p>Walking the Static.Quest web ring to <a href="https://{{ collections.members | ringNeighbor(member.data.host, -1) }}">https://{{ collections.members | ringNeighbor(member.data.host, -1) }}</a>&hellip;</p>
+  </body>
+</html>

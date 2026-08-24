@@ -3,9 +3,9 @@ permalink: /assets/members.json
 eleventyExcludeFromCollections: true
 ---
 [
-{%- for member in collections.members %}
+{%- for host in collections.members | orderedHosts %}
   {
-    "host": "{{ member.data.host }}"
+    "host": "{{ host }}"
   {%- if loop.last %}
   }
   {%- else %}

@@ -17,7 +17,7 @@ Add your information in the YAML data and it will be rendered to the table on th
 ```yaml
 ---
 name: Your Name
-host: yourwebsite.com/
+host: yourwebsite.com
 feed: yourwebsite.com/feed/
 ssg: static site generator
 type: "blog, personal, art, technology, etc"
@@ -30,15 +30,15 @@ The `ssg` is for the Static Site Generator used, and would be neat as the web ri
 
 ## Add Static.Quest to your site
 
-As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to update the `host` to the `host` you have in your `name.md` file.
+As a member of a web ring it is common to add links to the web ring and its members. Feel free to add the following HTML to your site as well. Make sure to replace `static.quest` with the `host` you have in your `name.md` file. These links are generated when Static.Quest is built, so they always point to the current next or previous member, even as the ring grows.
 
 ```html
 <p>
   A member of the <a href="https://static.quest">Static.Quest</a> web ring! 
   <br />
-  <a href="https://static.quest/previous/?host=static.quest">&#8592;</a>
+  <a href="https://static.quest/previous/static.quest">&#8592;</a>
   <a href="https://static.quest/members">View Members</a>
-  <a href="https://static.quest/next/?host=static.quest">&#8594;</a>
+  <a href="https://static.quest/next/static.quest">&#8594;</a>
   <br />
   <a href="https://static.quest/random">Feeling lucky?</a>
 </p>
@@ -48,13 +48,15 @@ As a member of a web ring it is common to add links to the web ring and its memb
 
   A member of the [Static.Quest](https://static.quest) web ring!
   <br />
-  [&#8592;](/previous/?host=static.quest)
+  [&#8592;](https://static.quest/previous/static.quest)
   [View Members](/members)
-  [&#8594;](/next/?host=static.quest)
+  [&#8594;](https://static.quest/next/static.quest)
   <br />
   [Feeling lucky?](https://static.quest/random)
 
 </div>
+
+The older style links using a query string, such as `/next/?host=static.quest`, still work if you already have them on your site.
 
 ## Membership rules
 

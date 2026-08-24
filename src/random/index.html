@@ -1,14 +1,22 @@
+---
+permalink: /random/
+eleventyExcludeFromCollections: true
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <!-- if redirect takes too long, redirect to static.quest home page. -->
     <meta http-equiv="refresh" content="10; url=https://static.quest/">
-    <script type="module" src="/assets/random.js"></script>
   </head>
 
   <body>
-    <noscript>You need to enable JavaScript to make it to the next destination in the quest. If not redirected, please go to <a href="https://static.quest">Static.Quest</a></noscript>
+    <noscript>You need to enable JavaScript for a random destination in the quest. If not redirected, please go to <a href="https://static.quest">Static.Quest</a></noscript>
     <!-- redirecting... if not redirected in 10 seconds ensure JavaScript is enabled, and page will redirect home. -->
+    <script>
+      const hosts = {{ collections.members | orderedHosts | dump | safe }};
+      window.location.href = "https://" + hosts[Math.floor(Math.random() * hosts.length)];
+    </script>
   </body>
 </html>

@@ -70,6 +70,35 @@ module.exports = function(eleventyConfig) {
     return counts;
   });
 
+  // Web ring helpers. The ring order is deterministic (hosts lowercased,
+  // trailing slashes stripped, alphabetically sorted) and is shared by
+  // /assets/members.json (legacy ?host= JS redirects) and the static
+  // /next/<host>/, /previous/<host>/ pages so both formats stay in sync.
+  function normalizeHost(host) {
+    return String(host || "").trim().replace(/\/+$/, "").toLowerCase();
+  }
+
+  eleventyConfig.addFilter("hostSlug", normalizeHost);
+
+  eleventyConfig.addFilter("orderedHosts", function(collection) {
+    return collection
+      .map(item => normalizeHost(item.data.host))
+      .filter(Boolean)
+      .sort();
+  });
+
+  eleventyConfig.addFilter("ringNeighbor", function(collection, host, offset) {
+    const hosts = collection
+      .map(item => normalizeHost(item.data.host))
+      .filter(Boolean)
+      .sort();
+    const index = hosts.indexOf(normalizeHost(host));
+    if(index === -1) {
+      return null;
+    }
+    return hosts[(index + offset + hosts.length) % hosts.length];
+  });
+
   function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
   }
