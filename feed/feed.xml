@@ -5,7 +5,7 @@
 	
 	<link href="https://static.quest/feed/feed.xml" rel="self"/>
 	<link href="https://static.quest/"/>
-	<updated>2026-08-22T00:00:00Z</updated>
+	<updated>2026-08-24T00:00:00Z</updated>
 	<id>https://static.quest/</id>
 	<author>
 		<name>Clayton Errington</name>
@@ -15,7 +15,7 @@
 	<entry>
 		<title>Improving the webring links, one build at a time</title>
 		<link href="https://static.quest/posts/improving-the-webring-links/"/>
-		<updated>2026-08-24T13:06:44Z</updated>
+		<updated>2026-08-24T13:28:30Z</updated>
 		<id>https://static.quest/posts/improving-the-webring-links/</id>
 		<content type="html">&lt;p&gt;If you have ever clicked the little ← and → arrows on a member&#39;s site, you have used the plumbing that ties &lt;a href=&quot;https://static.quest/&quot;&gt;Static.Quest&lt;/a&gt; together. Those links are how a web ring works: every site points to the next and previous member, and visitors can walk the whole circle without ever visiting the hub. This post is a look at how those links worked until recently, what was wrong with them, and how we made them better while staying 100% static.&lt;/p&gt;
 &lt;h2 id=&quot;how-it-used-to-work&quot; tabindex=&quot;-1&quot;&gt;How it used to work &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/improving-the-webring-links/#how-it-used-to-work&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -39,23 +39,23 @@
 &lt;p&gt;The key realization is that Eleventy already knows everything needed at build time. It has the full member list, so it knows exactly who comes before and after you in the ring. So why involve the browser at all?&lt;/p&gt;
 &lt;p&gt;Instead of one generic redirect page, we now generate &lt;strong&gt;one tiny HTML page per member per direction&lt;/strong&gt; during the build:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/next/static.quest/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/previous/static.quest/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/next/yourwebsite.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/previous/yourwebsite.com&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Each page is just a meta refresh pointing at the correct neighbor:&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;en&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;UTF-8&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;http-equiv&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;refresh&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0; url=https://nextsiteplaceholder.com/&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;http-equiv&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;refresh&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;0; url=https://yourwebsite.com/&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Walking the Static.Quest web ring to
-      &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://nextsiteplaceholder.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;https://nextsiteplaceholder.com&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token entity named-entity&quot; title=&quot;&amp;hellip;&quot;&gt;&amp;amp;hellip;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://yourwebsite.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;https://yourwebsite.com&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token entity named-entity&quot; title=&quot;&amp;hellip;&quot;&gt;&amp;amp;hellip;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Members embed a link to their own page (&lt;code&gt;/next/static.quest/&lt;/code&gt;) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone&#39;s pages, and all the neighbors quietly shift over without any member touching their markup.&lt;/p&gt;
+&lt;p&gt;Members embed a link to their own page (&lt;code&gt;/next/yourwebsite.com&lt;/code&gt;) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone&#39;s pages, and all the neighbors quietly shift over without any member touching their markup.&lt;/p&gt;
 &lt;h2 id=&quot;how-it-is-built&quot; tabindex=&quot;-1&quot;&gt;How it is built &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/improving-the-webring-links/#how-it-is-built&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Two pieces make this work in Eleventy.&lt;/p&gt;
 &lt;p&gt;First, a deterministic ring order. Hosts are normalized (lowercased, trailing slashes stripped) and sorted alphabetically, then shared through filters so every consumer agrees on who is next and previous:&lt;/p&gt;
@@ -100,18 +100,18 @@ pagination:
 &lt;li&gt;The new per-host pages live alongside them at &lt;code&gt;/next/&amp;lt;host&amp;gt;/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Both read from the same shared ordering, so &amp;quot;next&amp;quot; means the same neighbor no matter which style of link brought you there&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;New members copying the snippet from the &lt;a href=&quot;https://static.quest/pages/join/&quot;&gt;join page&lt;/a&gt; get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.&lt;/p&gt;
+&lt;p&gt;New members copying the snippet from the &lt;a href=&quot;https://static.quest/join/&quot;&gt;join page&lt;/a&gt; get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.&lt;/p&gt;
 &lt;p&gt;While improving the overall process, the random link got a small tune-up too. It used to be the same story: load page, fetch JSON, pick a winner. Now the member list is baked right into the page at build time, so clicking &amp;quot;Feeling lucky?&amp;quot; needs zero network requests beyond the redirect itself.&lt;/p&gt;
 &lt;h2 id=&quot;why-this-matters&quot; tabindex=&quot;-1&quot;&gt;Why this matters &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/improving-the-webring-links/#why-this-matters&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Everything above stays true to what makes a static site a static site: no server-side logic, no edge functions, no databases. Just files on a static server. The &amp;quot;dynamic&amp;quot; behavior people usually reach for JavaScript to solve turned out to be a build-time problem wearing a runtime costume, and moving it into the build made the result faster, simpler, and friendlier to browsers that don&#39;t run scripts.&lt;/p&gt;
-&lt;p&gt;So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the &lt;a href=&quot;https://static.quest/pages/join/&quot;&gt;joining instructions&lt;/a&gt; and add yourself to the circle.&lt;/p&gt;
+&lt;p&gt;So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the &lt;a href=&quot;https://static.quest/join/&quot;&gt;joining instructions&lt;/a&gt; and add yourself to the circle.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>What is a static website?</title>
 		<link href="https://static.quest/posts/what-is-a-static-site/"/>
-		<updated>2026-08-24T13:06:44Z</updated>
+		<updated>2026-08-24T13:28:30Z</updated>
 		<id>https://static.quest/posts/what-is-a-static-site/</id>
 		<content type="html">&lt;h2 id=&quot;what-is-a-static-website&quot; tabindex=&quot;-1&quot;&gt;What is a Static Website? &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/what-is-a-static-site/#what-is-a-static-website&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A static website is like a digital brochure that remains unchanged unless manually updated. Every page of a static website is a fixed HTML file, meaning the content is pre-determined and doesn&#39;t dynamically change based on user interactions or real-time data.&lt;/p&gt;
@@ -142,7 +142,7 @@ pagination:
 	<entry>
 		<title>Building a static site</title>
 		<link href="https://static.quest/posts/static-site-generators/"/>
-		<updated>2026-08-24T13:06:44Z</updated>
+		<updated>2026-08-24T13:28:30Z</updated>
 		<id>https://static.quest/posts/static-site-generators/</id>
 		<content type="html">&lt;p&gt;Static sites are a great part of the small web. They are easy to configure, deploy, and maintain. You can use a static site generator or write the HTML yourself.&lt;/p&gt;
 &lt;h2 id=&quot;static-site-generators&quot; tabindex=&quot;-1&quot;&gt;Static Site Generators &lt;a class=&quot;direct-link&quot; href=&quot;https://static.quest/posts/static-site-generators/#static-site-generators&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -184,7 +184,7 @@ pagination:
 	<entry>
 		<title>Just start a blog</title>
 		<link href="https://static.quest/posts/resources/"/>
-		<updated>2026-08-24T13:06:44Z</updated>
+		<updated>2026-08-24T13:28:30Z</updated>
 		<id>https://static.quest/posts/resources/</id>
 		<content type="html">&lt;p&gt;Finding a good community to help you along in your web journey is a powerful thing. There are places to improve design, backend work, writing, and more. Here are a few great resources to help in some of those ideas.&lt;/p&gt;
 &lt;ul&gt;

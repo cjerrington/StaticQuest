@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Improving the webring links, one build at a time</title>
-  <meta name="description" content="How we replaced JavaScript redirects with pages generated at build time for the Static.Quest webring">
+  <meta name="description" content="How I replaced JavaScript redirects with pages generated at build time for the Static.Quest webring">
   <meta name="generator" content="Eleventy (Build Awesome) v4.0.0">
   <link rel="me" href="https://mstdn.social/@cjerrington" />
 
@@ -33,12 +33,12 @@
     </nav>
 
     <h1>Improving the webring links, one build at a time</h1>
-    <p>How we replaced JavaScript redirects with pages generated at build time for the Static.Quest webring</p>
+    <p>How I replaced JavaScript redirects with pages generated at build time for the Static.Quest webring</p>
   </header>
 
   <main>
     
-<!-- p>Posted on: <time datetime="2026-08-22">22 Aug 2026</time></p-->
+<!-- p>Posted on: <time datetime="2026-08-24">24 Aug 2026</time></p-->
 
 <p>If you have ever clicked the little ← and → arrows on a member's site, you have used the plumbing that ties <a href="https://static.quest">Static.Quest</a> together. Those links are how a web ring works: every site points to the next and previous member, and visitors can walk the whole circle without ever visiting the hub. This post is a look at how those links worked until recently, what was wrong with them, and how we made them better while staying 100% static.</p>
 <h2 id="how-it-used-to-work" tabindex="-1">How it used to work <a class="direct-link" href="#how-it-used-to-work" aria-hidden="true">#</a></h2>
@@ -62,23 +62,23 @@
 <p>The key realization is that Eleventy already knows everything needed at build time. It has the full member list, so it knows exactly who comes before and after you in the ring. So why involve the browser at all?</p>
 <p>Instead of one generic redirect page, we now generate <strong>one tiny HTML page per member per direction</strong> during the build:</p>
 <ul>
-<li><code>/next/static.quest/</code></li>
-<li><code>/previous/static.quest/</code></li>
+<li><code>/next/yourwebsite.com</code></li>
+<li><code>/previous/yourwebsite.com</code></li>
 </ul>
 <p>Each page is just a meta refresh pointing at the correct neighbor:</p>
 <pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>refresh<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0; url=https://nextsiteplaceholder.com/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>refresh<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0; url=https://yourwebsite.com/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
 
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Walking the Static.Quest web ring to
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://nextsiteplaceholder.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>https://nextsiteplaceholder.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token entity named-entity" title="&hellip;">&amp;hellip;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://yourwebsite.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>https://yourwebsite.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token entity named-entity" title="&hellip;">&amp;hellip;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<p>Members embed a link to their own page (<code>/next/static.quest/</code>) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone's pages, and all the neighbors quietly shift over without any member touching their markup.</p>
+<p>Members embed a link to their own page (<code>/next/yourwebsite.com</code>) rather than passing themselves as a query parameter. That URL never changes. When a new site joins the ring, the build regenerates everyone's pages, and all the neighbors quietly shift over without any member touching their markup.</p>
 <h2 id="how-it-is-built" tabindex="-1">How it is built <a class="direct-link" href="#how-it-is-built" aria-hidden="true">#</a></h2>
 <p>Two pieces make this work in Eleventy.</p>
 <p>First, a deterministic ring order. Hosts are normalized (lowercased, trailing slashes stripped) and sorted alphabetically, then shared through filters so every consumer agrees on who is next and previous:</p>
@@ -123,11 +123,11 @@ pagination:
 <li>The new per-host pages live alongside them at <code>/next/&lt;host&gt;/</code></li>
 <li>Both read from the same shared ordering, so &quot;next&quot; means the same neighbor no matter which style of link brought you there</li>
 </ul>
-<p>New members copying the snippet from the <a href="/pages/join/">join page</a> get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.</p>
+<p>New members copying the snippet from the <a href="/join/">join page</a> get the new format; existing members can update whenever they feel like it, or never. No rush, no breaking changes. That felt like the right way to treat the folks who make the ring a ring.</p>
 <p>While improving the overall process, the random link got a small tune-up too. It used to be the same story: load page, fetch JSON, pick a winner. Now the member list is baked right into the page at build time, so clicking &quot;Feeling lucky?&quot; needs zero network requests beyond the redirect itself.</p>
 <h2 id="why-this-matters" tabindex="-1">Why this matters <a class="direct-link" href="#why-this-matters" aria-hidden="true">#</a></h2>
 <p>Everything above stays true to what makes a static site a static site: no server-side logic, no edge functions, no databases. Just files on a static server. The &quot;dynamic&quot; behavior people usually reach for JavaScript to solve turned out to be a build-time problem wearing a runtime costume, and moving it into the build made the result faster, simpler, and friendlier to browsers that don't run scripts.</p>
-<p>So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the <a href="/pages/join/">joining instructions</a> and add yourself to the circle.</p>
+<p>So go ahead, click an arrow somewhere in the ring and enjoy the tour. If you run your own site and want to join the quest, we would love to have you. Check out the <a href="/join/">joining instructions</a> and add yourself to the circle.</p>
 
 <hr>
 <p>Tagged with:</p>
