@@ -1,7 +1,7 @@
 ---
 name: ilyess
-host: ilyess.cc
-feed: ilyess.cc/posts/index.xml
+host: ilye.ss
+feed: ilye.ss/posts/index.xml
 ssg: Hugo
 type: "blog, personal, privacy, technology"
 ---
