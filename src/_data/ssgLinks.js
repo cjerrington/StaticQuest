@@ -14,5 +14,6 @@ module.exports = {
   makko: "https://makko.starlightnet.work/",
   blot: "https://blot.im/",
   "mfgames.nitride": "https://mfgames.com/mfgames-cil/docs/nitride/",
-  marked : "https://marked.js.org/"
+  marked : "https://marked.js.org/",
+  zine : "https://zine-ssg.io/"
 };
