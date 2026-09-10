@@ -57,9 +57,6 @@
     "host": "hisvirusness.com"
   },
   {
-    "host": "https://www.jamesleighton.com"
-  },
-  {
     "host": "ilye.ss"
   },
   {
@@ -175,6 +172,9 @@
   },
   {
     "host": "www.dylanharris.org"
+  },
+  {
+    "host": "www.jamesleighton.com"
   },
   {
     "host": "www.owlcode.eu"
