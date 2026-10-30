@@ -2,7 +2,7 @@
 <opml version="1.0">
     <head>
         <title>RSS Feeds for all Static.Quest's members</title>
-        <dateCreated>Mon, 19 Oct 2026 23:24:05 GMT</dateCreated>
+        <dateCreated>Fri, 30 Oct 2026 04:38:23 GMT</dateCreated>
     </head>
     <body>
             <outline text="Andreas" title="Andreas" type="rss" xmlUrl="82mhz.net/index.xml" htmlUrl="82mhz.net"/>
@@ -58,6 +58,9 @@
         
         
             <outline text="Clayton Errington" title="Clayton Errington" type="rss" xmlUrl="claytonerrington.com/feed/" htmlUrl="claytonerrington.com"/>
+            
+        
+            <outline text="Andrew Dobrow" title="Andrew Dobrow" type="rss" xmlUrl="dobrow.blog/rss.xml" htmlUrl="dobrow.blog"/>
             
         
             <outline text="Antarctica Starts Here." title="Antarctica Starts Here." type="rss" xmlUrl="drwho.virtadpt.net/rss/feed.xml" htmlUrl="drwho.virtadpt.net"/>
